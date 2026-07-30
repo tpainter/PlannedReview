@@ -1,6 +1,8 @@
 import os
 from typing import Annotated, Sequence, TypedDict
 
+from dotenv import load_dotenv
+
 from pypdf import PdfReader, PdfWriter
 import pathlib
 import logging
@@ -21,7 +23,6 @@ from langchain.agents import create_agent
 
 # Limit the spam from logging INFO messages
 logging.basicConfig()
-logging.getLogger().setLevel(logging.WARNING)
 logging.getLogger().setLevel(logging.WARNING)
 
 
@@ -86,14 +87,28 @@ def setup_document_index(temp_dir_path: str):
     print(f"Parsing documents with Docling: {temp_dir_path}...")
     documents = dir_reader.load_data(temp_dir_path)
 
-    # Create a VectorStoreIndex from the parsed documents
-    print("Building LlamaIndex vector store...")
-    index = VectorStoreIndex.from_documents(
-        documents, 
-        transformation=[node_parser],
-        embed_model = Settings.embed_model,
-        show_progress=True,
-    )
+    storage_type = 'db'
+    if storage_type == 'vector_store':
+        # Create a VectorStoreIndex from the parsed documents
+        print("Building LlamaIndex vector store...")
+        index = VectorStoreIndex.from_documents(
+            documents, 
+            transformation=[node_parser],
+            embed_model = Settings.embed_model,
+            show_progress=True,
+        )
+    elif storage_type == 'db':
+        import chromadb
+        from llama_index.vector_stores.chroma import ChromaVectorStore
+        from llama_index.core import StorageContext
+
+        chroma_client = chromadb.EphemeralClient()
+        chroma_collection = chroma_client.create_collection("test")
+        vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
+        storage_context = StorageContext.from_defaults(vector_store=vector_store)
+        index = VectorStoreIndex.from_documents(
+            documents, storage_context=storage_context, embed_model=Settings.embed_model
+        )
     
     # Create a Query Engine (the retriever)
     query_engine = index.as_query_engine(similarity_top_k=3)
