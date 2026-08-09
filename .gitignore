@@ -25,7 +25,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-uv.lock
 
 # PyInstaller
 #   Usually these files are written by a python script from a template
@@ -220,4 +219,3 @@ __marimo__/
 
 # Data files
 data/
-uv.lock
