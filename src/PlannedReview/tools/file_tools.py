@@ -1,15 +1,14 @@
 
-from pydantic import BaseModel, Field
-from pydantic_ai import Agent
-
+from pydantic_ai import BinaryContent, ToolReturn
 
 from pypdf import PdfReader, PdfWriter
-import pathlib
+from pathlib import Path
+
 
 
 def pdf_split_pages(file_path: str):
-    pdf_dir = pathlib.Path(file_path).parents[0]
-    pdf_fname = pathlib.Path(file_path).stem
+    pdf_dir = Path(file_path).parents[0]
+    pdf_fname = Path(file_path).stem
     
     temp_dir = pdf_dir.joinpath("temp")   
     print("Created temporary directory: {}".format(temp_dir.absolute()))
@@ -28,5 +27,26 @@ def pdf_split_pages(file_path: str):
         print('Created: {}'.format(output_filename))
         
     return temp_dir  
+
+def retreive_file(file_path: str):
+    """Request a file name to retrieve the original pdf file. Only use filename from the database. 
+
+    Args:
+        file_path: the file name that is requested
+    """
+
+    #do some basic checking.
+    #must be a *.pdf
+    if not file_path.endswith('.pdf'):
+        return 'Error: file is not a pdf.'
+
+    print(f'Requested PDF: {file_path}')
+    pdf_path = Path('data/temp/' + file_path)
+
+    binary_file = BinaryContent(data=pdf_path.read_bytes(), media_type='application/pdf')
+
+    return ToolReturn(
+        return_value = [binary_file],
+    )
 
 
