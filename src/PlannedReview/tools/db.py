@@ -12,7 +12,7 @@ from llama_index.readers.docling import DoclingReader
 from llama_index.node_parser.docling import DoclingNodeParser
 
 
-from pydantic_ai import Agent, RunContext
+from pydantic_ai import Agent, RunContext, ToolReturn
 from pydantic import BaseModel, Field
 from typing import List
 
@@ -138,4 +138,7 @@ def rag_db(ctx: RunContext[AgentDeps], query: str) -> str:
     print(f"Query: {query}")
     response = ctx.deps.query_engine.query(query)
     print(f"Response: {response}")
-    return str(response)
+    
+    return ToolReturn(
+        return_value= [str(response)],
+    )
