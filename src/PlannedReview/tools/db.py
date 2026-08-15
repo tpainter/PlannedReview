@@ -51,10 +51,23 @@ def vectorStore(temp_dir_path: str, pdf_name: str):
         )
 
         print(f"Parsing documents with Docling: {temp_dir_path}...")
-        documents = dir_reader.load_data(temp_dir_path)
-        index = VectorStoreIndex.from_documents(
-            documents, storage_context=storage_context, embed_model=Settings.embed_model
-        )
+        documents = dir_reader.load_data()
+
+        node_parser = DoclingNodeParser()
+        nodes = node_parser.get_nodes_from_documents(documents)
+
+        #Clean up error from VectorStor where it can't use a list in the node.metadata['doc_items']
+        import json
+        for n in nodes:
+            for k in n.metadata:
+                n.metadata[k] = json.dumps(n.metadata[k])
+
+                
+        index = VectorStoreIndex(
+            nodes=nodes, 
+            storage_context=storage_context, 
+            embed_model=Settings.embed_model,
+            )
 
         print("LlamaIndex vector store complete.")
 

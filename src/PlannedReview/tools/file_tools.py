@@ -39,21 +39,29 @@ def retreive_file(file_path: str):
     #do some basic checking.
     #must be a *.pdf
     if not file_path.endswith('.pdf'):
-        return 'Error: file is not a pdf.'
+        return ToolReturn(
+            return_value = f'File is not a PDF. Only PDF files can be requested.',
+        )
 
     print(f'Requested PDF: {file_path}')
     pdf_path = Path('data/temp/' + file_path)
 
-    #TODO: tile pdf instead of returning one big image
-    doc = pymupdf.open(pdf_path)
-    page = doc.load_page(0)  # number of page
-    pix = page.get_pixmap(dpi=150)
+    try:
+        #TODO: tile pdf instead of returning one big image
+        doc = pymupdf.open(pdf_path)
+        page = doc.load_page(0)  # number of page
+        pix = page.get_pixmap(dpi=150)
 
-    binary_file = BinaryContent(data=pix.tobytes(output="png"), media_type='image/png')
+        binary_file = BinaryContent(data=pix.tobytes(output="png"), media_type='image/png')
 
-    return ToolReturn(
-        return_value = f'Pdf page attached as an image.',
-        content=[binary_file],
-    )
+        return ToolReturn(
+            return_value = f'Pdf page attached as an image.',
+            content=[binary_file],
+        )
+    except:
+        return ToolReturn(
+                    return_value = f'Error retrieving file.',
+                )
+        
 
 
