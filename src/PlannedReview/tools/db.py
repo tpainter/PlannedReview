@@ -1,3 +1,5 @@
+import logging
+
 import chromadb
 from llama_index.core import VectorStoreIndex, StorageContext, Settings
 from llama_index.core.query_engine import BaseQueryEngine
@@ -15,8 +17,9 @@ from llama_index.node_parser.docling import DoclingNodeParser
 from pydantic_ai import Agent, RunContext, ToolReturn
 from pydantic import BaseModel, Field
 from typing import List
+import json
 
-from dataclasses import dataclass
+from tools import llm
 
 
 def vectorStore(temp_dir_path: str, pdf_name: str):
@@ -29,11 +32,11 @@ def vectorStore(temp_dir_path: str, pdf_name: str):
     try:
         chroma_collection = chroma_client.get_collection("pdf_name")
         collection_exists = True
-        print("Found existing collection. Skipping re-embedding...")
+        logging.info("Found existing collection. Skipping re-embedding...")
     except:
         chroma_collection = chroma_client.get_or_create_collection("pdf_name")
         collection_exists = False
-        print("Existing collection not found.")
+        logging.info("Existing collection not found.")
     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
     storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
@@ -50,14 +53,13 @@ def vectorStore(temp_dir_path: str, pdf_name: str):
             filename_as_id=True,
         )
 
-        print(f"Parsing documents with Docling: {temp_dir_path}...")
+        logging.info(f"Parsing documents with Docling: {temp_dir_path}...")
         documents = dir_reader.load_data()
 
         node_parser = DoclingNodeParser()
         nodes = node_parser.get_nodes_from_documents(documents)
 
-        #Clean up error from VectorStor where it can't use a list in the node.metadata['doc_items']
-        import json
+        #Clean up error from VectorStor where it can't use a list in the node.metadata       
         for n in nodes:
             for k in n.metadata:
                 n.metadata[k] = json.dumps(n.metadata[k])
@@ -69,7 +71,7 @@ def vectorStore(temp_dir_path: str, pdf_name: str):
             embed_model=Settings.embed_model,
             )
 
-        print("LlamaIndex vector store complete.")
+        logging.info("LlamaIndex vector store complete.")
 
     query_engine = index.as_query_engine(
             similarity_top_k=5,
@@ -137,20 +139,16 @@ def fusionStore(temp_dir_path: str, pdf_name: str):
 
     return RetrieverQueryEngine(retriever)
 
-@dataclass
-class AgentDeps:
-    query_engine: BaseQueryEngine
 
-
-def rag_db(ctx: RunContext[AgentDeps], query: str) -> str:
+def rag_db(ctx: RunContext[llm.AgentDeps], query: str) -> str:
     """Database to query for information from the pdf documents.
 
     Args:
         query: the query string to send to the database
     """
-    print(f"Query: {query}")
+    logging.debug(f"Query: {query}")
     response = ctx.deps.query_engine.query(query)
-    print(f"Response: {response}")
+    logging.debug(f"Response: {response}")
     
     return ToolReturn(
         return_value= [str(response)],

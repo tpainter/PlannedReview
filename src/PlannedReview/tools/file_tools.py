@@ -1,10 +1,16 @@
 
+import logging
+import os
+
 from pydantic_ai import BinaryContent, ToolReturn
 
 from pypdf import PdfReader, PdfWriter #probably don't need this now that pymupdf is being used
 import pymupdf
 from pathlib import Path
+import shutil
 
+from pydantic_ai import RunContext
+from tools import llm
 
 
 def pdf_split_pages(file_path: str):
@@ -12,7 +18,7 @@ def pdf_split_pages(file_path: str):
     pdf_fname = Path(file_path).stem
     
     temp_dir = pdf_dir.joinpath("temp")   
-    print("Created temporary directory: {}".format(temp_dir.absolute()))
+    logging.info("Created temporary directory: {}".format(temp_dir.absolute()))
     
     pdf = PdfReader(file_path)
     
@@ -25,31 +31,56 @@ def pdf_split_pages(file_path: str):
         with open(output_filename, 'wb') as out:
             pdf_writer.write(out)
 
-        print('Created: {}'.format(output_filename))
+        logging.info('Created: {}'.format(output_filename))
         
     return temp_dir  
 
-def retreive_file(file_path: str):
+def pdf_move(file_path: str):
+    pdf_dir = Path(file_path).parents[0]
+    pdf_fname = Path(file_path).name
+    
+    temp_dir = pdf_dir.joinpath("temp")   
+    #logging.info("Created temporary directory: {}".format(temp_dir.absolute()))
+
+    if os.path.exists(temp_dir / pdf_fname):
+        logging.info("File alread exists in temp folder. Skipping.")
+    else:
+        shutil.copy(file_path, temp_dir) 
+        logging.info(f"Copied file {pdf_fname}")
+            
+    return temp_dir 
+
+def retreive_file(ctx: RunContext[llm.AgentDeps], file_name: str, page: int = 1) -> ToolReturn:
     """Request a file name to retrieve the original pdf file. Only use filename from the database. 
 
     Args:
-        file_path: the file name that is requested
+        file_path: the pdf file name that is requested
+        page: the page number to retreive from the pdf. default is the first page (1)
     """
-
+    logging.debug(f'Requested PDF: {file_name} page {page}')
+    pdf_path = ctx.deps.pdf_path / Path(file_name)
+    
     #do some basic checking.
-    #must be a *.pdf
-    if not file_path.endswith('.pdf'):
+    # must be a *.pdf
+    if not file_name.endswith('.pdf'):
         return ToolReturn(
             return_value = f'File is not a PDF. Only PDF files can be requested.',
         )
 
-    print(f'Requested PDF: {file_path}')
-    pdf_path = Path('data/temp/' + file_path)
+    # requested page must be in the range of pages in the pdf
+    pdf = PdfReader(pdf_path)
+    if page < 1:
+        ToolReturn(return_value = 'Minimum page number is 1.',)
+    elif page > len(pdf.pages):
+        ToolReturn(
+            return_value = f'''Error page number must be within number of pages in pdf. 
+            {file_name} contains {pdf.pages} pages.''',
+            )
 
     try:
         #TODO: tile pdf instead of returning one big image
         doc = pymupdf.open(pdf_path)
-        page = doc.load_page(0)  # number of page
+        page = doc.load_page(page - 1)  # number of page. Page 1 is 0 index
         pix = page.get_pixmap(dpi=150)
 
         binary_file = BinaryContent(data=pix.tobytes(output="png"), media_type='image/png')

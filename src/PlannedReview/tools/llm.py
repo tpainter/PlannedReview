@@ -1,4 +1,6 @@
 import os
+import logging
+from pathlib import Path
 
 from llama_index.core import Settings
 
@@ -29,6 +31,7 @@ GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 @dataclass
 class AgentDeps:
     query_engine: BaseQueryEngine
+    pdf_path: Path
 
 def setup_llms(llm_location):
     
@@ -47,7 +50,7 @@ def setup_llms(llm_location):
                 api_key="fake",
                 is_function_calling_mode=True,
                 is_chat_model=True,
-                timeout=1200.0,
+                timeout=3600.0,
             )
         
         provider = OpenAIProvider(base_url = "http://192.168.0.50:8080/v1")
@@ -65,7 +68,7 @@ def setup_llms(llm_location):
         api_base="http://192.168.0.50:8080/v1",
         api_key="fake",
         embed_batch_size=32,
-        timeout=60.0,
+        timeout=120.0,
     )
 
     return agent
