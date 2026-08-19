@@ -47,13 +47,13 @@ def main():
             user_prompt = q
 
             result = agent.run_sync(user_prompt, deps=deps)
-            print(f"Tokens used: {result.usage.total_tokens}")
+            print(f"Tokens used: {result.usage.total_tokens:,}")
             print("Agent Response:")
             print(result.output)
     else:
         user_prompt = prompt
         result = agent.run_sync(user_prompt, deps=deps)
-        print(f"Tokens used: {result.usage.total_tokens}")
+        print(f"Tokens used: {result.usage.total_tokens:,}")
         print("Agent Response:")
         print(result.output)
 

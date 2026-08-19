@@ -57,7 +57,7 @@ def retreive_file(ctx: RunContext[llm.AgentDeps], file_name: str, page: int = 1)
         file_path: the pdf file name that is requested
         page: the page number to retreive from the pdf. default is the first page (1)
     """
-    logging.debug(f'Requested PDF: {file_name} page {page}')
+    logging.info(f'Requested PDF: {file_name} page {page}')
     pdf_path = ctx.deps.pdf_path / Path(file_name)
     
     #do some basic checking.
