@@ -13,7 +13,7 @@ from pydantic_ai.models.openai import OpenAIResponsesModel
 from pydantic_ai.providers.openai import OpenAIProvider
 from llama_index.core.query_engine import BaseQueryEngine
 
-from pydantic_ai import Agent
+from pydantic_ai import Agent, ConcurrencyLimit
 from pydantic_ai.models.google import GoogleModel
 from pydantic_ai.providers.google import GoogleProvider
 
@@ -50,7 +50,8 @@ def setup_llms(llm_location):
                 api_key="fake",
                 is_function_calling_mode=True,
                 is_chat_model=True,
-                timeout=3600.0,
+                timeout=7200.0,
+                max_concurrency=2,
             )
         
         provider = OpenAIProvider(base_url = "http://192.168.0.50:8080/v1")
@@ -61,6 +62,9 @@ def setup_llms(llm_location):
                   tools=[db.rag_db, 
                          file_tools.retreive_file,
                          ],
+                   model_settings={'timeout': 3600},
+                   tool_timeout=600,
+                   max_concurrency=2,
             )
 
     Settings.embed_model = OpenAILikeEmbedding(
