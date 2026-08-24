@@ -61,6 +61,7 @@ def setup_llms(llm_location):
                   deps_type=AgentDeps,
                   tools=[db.rag_db, 
                          file_tools.retreive_file,
+                         file_tools.write_json,
                          ],
                    model_settings={'timeout': 3600},
                    tool_timeout=600,

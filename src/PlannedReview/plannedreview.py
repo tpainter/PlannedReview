@@ -58,4 +58,5 @@ def main():
         print(result.output)
 
 if __name__ == "__main__":
+    #Example: uv run .\src\PlannedReview\plannedreview.py .\data\OhioCounty.pdf -p "write 'test' to the file, output.json"
     main()

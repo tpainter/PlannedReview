@@ -54,7 +54,7 @@ def retreive_file(ctx: RunContext[llm.AgentDeps], file_name: str, page: int = 1)
     """Request a file name to retrieve the original pdf file. Only use filename from the database. 
 
     Args:
-        file_path: the pdf file name that is requested
+        file_name: the pdf file name that is requested
         page: the page number to retreive from the pdf. default is the first page (1)
     """
     logging.info(f'Requested PDF: {file_name} page {page}')
@@ -94,5 +94,27 @@ def retreive_file(ctx: RunContext[llm.AgentDeps], file_name: str, page: int = 1)
                     return_value = f'Error retrieving file.',
                 )
         
+def write_json(ctx: RunContext[llm.AgentDeps], file_name: str, content: str) -> ToolReturn:
+    """Request file to be writen to the system. 
 
+    Args:
+        file_name: the file name to write information
+        content: the text to write to the file
+    """
+
+    
+    try:
+        file_path = ctx.deps.pdf_path / Path(file_name)
+
+        file_path.write_text(content, encoding="utf-8")
+
+        logging.info(f'Wrote to file: {file_name} ')
+
+        return ToolReturn(
+            return_value = f'Successfully wrote file.',
+        )
+    except:
+        return ToolReturn(
+                    return_value = f'Error writing file.',
+                )
 
