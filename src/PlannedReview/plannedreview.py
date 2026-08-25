@@ -10,16 +10,10 @@ from queries import Q000
 
 
 
-def main():
-    logging.basicConfig(level=logging.INFO)
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("pdf", help = "The file name of the pdf to analyze.", type = str)
-    parser.add_argument("-p", "--prompt", help="The prompt to sent to the plan agent.", default="None")
-    args = parser.parse_args()
-
+def plannedreview(pdf, prompt):
+    
     # Provide a pdf document
-    pdf_path = Path(args.pdf) 
+    pdf_path = Path(pdf) 
     pdf_name = pdf_path.stem
 
     prompt = args.prompt
@@ -59,4 +53,11 @@ def main():
 
 if __name__ == "__main__":
     #Example: uv run .\src\PlannedReview\plannedreview.py .\data\OhioCounty.pdf -p "write 'test' to the file, output.json"
-    main()
+    
+    logging.basicConfig(level=logging.INFO)
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("pdf", help = "The file name of the pdf to analyze.", type = str)
+    parser.add_argument("-p", "--prompt", help="The prompt to sent to the plan agent.", default="None")
+    args = parser.parse_args()
+    plannedreview(args.pdf, args.prompt)
