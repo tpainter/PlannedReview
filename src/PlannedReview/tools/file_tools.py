@@ -13,7 +13,7 @@ from pydantic_ai import RunContext
 from tools import llm
 
 
-def pdf_split_pages(file_path: str):
+def pdf_split_pages(file_path: str) -> Path:
     pdf_dir = Path(file_path).parents[0]
     pdf_fname = Path(file_path).stem
     
@@ -35,12 +35,12 @@ def pdf_split_pages(file_path: str):
         
     return temp_dir  
 
-def pdf_move(file_path: str):
-    pdf_dir = Path(file_path).parents[0]
-    pdf_fname = Path(file_path).name
+def pdf_move(file_path: Path) -> Path:
+    pdf_dir = file_path.parent
+    pdf_fname = file_path.name
     
     temp_dir = pdf_dir.joinpath("temp")   
-    #logging.info("Created temporary directory: {}".format(temp_dir.absolute()))
+    logging.info("Created temporary directory: {}".format(temp_dir.absolute()))
 
     if os.path.exists(temp_dir / pdf_fname):
         logging.info("File alread exists in temp folder. Skipping.")
@@ -108,13 +108,13 @@ def write_json(ctx: RunContext[llm.AgentDeps], file_name: str, content: str) -> 
 
         file_path.write_text(content, encoding="utf-8")
 
-        logging.info(f'Wrote to file: {file_name} ')
+        logging.info(f'Wrote to file: {file_path} ')
 
         return ToolReturn(
             return_value = f'Successfully wrote file.',
         )
     except:
         return ToolReturn(
-                    return_value = f'Error writing file.',
+                    return_value = f'Error writing file. {file_path} ',
                 )
 

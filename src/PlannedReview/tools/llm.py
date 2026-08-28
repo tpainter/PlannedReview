@@ -18,6 +18,7 @@ from pydantic_ai.models.google import GoogleModel
 from pydantic_ai.providers.google import GoogleProvider
 
 from dataclasses import dataclass
+from typing import Any
 
 from tools import db
 from tools import file_tools
@@ -33,29 +34,29 @@ class AgentDeps:
     query_engine: BaseQueryEngine
     pdf_path: Path
 
-def setup_llms(llm_location):
+def setup_llms(llm_location: str) -> Agent:
     
     if llm_location == 'google':
         Settings.llm = GoogleGenAI(
-                model="gemini-3.6-flash",
-                api_key=GEMINI_API_KEY,
+               model="gemini-3.6-flash",
+               api_key=GEMINI_API_KEY,
         )
         
         provider = GoogleProvider(api_key=GEMINI_API_KEY)
         model = GoogleModel('gemini-3.6-flash', provider=provider)
     if llm_location == 'local':
         Settings.llm = OpenAILike(
-                model="muse",
-                api_base="http://192.168.0.50:8080/v1",
-                api_key="fake",
-                is_function_calling_mode=True,
-                is_chat_model=True,
-                timeout=7200.0,
-                max_concurrency=2,
+               model="qwen3.8-27B",
+               api_base="http://192.168.0.50:8080/v1",
+               api_key="fake",
+               is_function_calling_mode=True,
+               is_chat_model=True,
+               timeout=60.0*60*24,
+               max_concurrency=2,
             )
         
         provider = OpenAIProvider(base_url = "http://192.168.0.50:8080/v1")
-        model = OpenAIResponsesModel(model_name = "muse", provider=provider)
+        model = OpenAIResponsesModel(model_name = "qwen3.8-27B", provider=provider)
 
     agent = Agent(model,
                   deps_type=AgentDeps,
@@ -63,7 +64,7 @@ def setup_llms(llm_location):
                          file_tools.retreive_file,
                          file_tools.write_json,
                          ],
-                   model_settings={'timeout': 3600},
+                   model_settings={'timeout': 60.0*60*24},
                    tool_timeout=600,
                    max_concurrency=2,
             )

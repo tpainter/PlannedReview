@@ -22,21 +22,23 @@ import json
 from tools import llm
 
 
-def vectorStore(temp_dir_path: str, pdf_name: str):
+def vectorStore(temp_dir_path: str, pdf_name: str) -> BaseQueryEngine:
     """
     
     """
+    # clean special characters from pdf name to use as collection name
+    pdf_collection = "".join(char for char in pdf_name if char.isalnum())
 
     chroma_client = chromadb.PersistentClient(path='./data/chroma_db')
     #check if vectors are already in db for pdf
     try:
-        chroma_collection = chroma_client.get_collection("pdf_name")
+        chroma_collection = chroma_client.get_collection(pdf_collection)
         collection_exists = True
-        logging.info("Found existing collection. Skipping re-embedding...")
+        logging.info(f"Found existing collection({pdf_collection}). Skipping re-embedding...")
     except:
-        chroma_collection = chroma_client.get_or_create_collection("pdf_name")
+        chroma_collection = chroma_client.get_or_create_collection(pdf_collection)
         collection_exists = False
-        logging.info("Existing collection not found.")
+        logging.info(f"Existing collection({pdf_collection}) not found.")
     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
     storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
@@ -81,20 +83,22 @@ def vectorStore(temp_dir_path: str, pdf_name: str):
     return query_engine
 
 
-def fusionStore(temp_dir_path: str, pdf_name: str):
+def fusionStore(temp_dir_path: str, pdf_name: str) -> RetrieverQueryEngine:
     """Combined vector store and BM25 retreiver.    
     """
 
+    # clean special characters from pdf name to use as collection name
+    pdf_collection = "".join(char for char in pdf_name if char.isalnum())
     chroma_client = chromadb.PersistentClient(path='./data/chroma_db')
     #check if vectors are already in db for pdf
     try:
-        chroma_collection = chroma_client.get_collection("pdf_name")
+        chroma_collection = chroma_client.get_collection(pdf_collection)
         collection_exists = True
-        print("Found existing collection. Skipping re-embedding...")
+        logging.info(f"Found existing collection({pdf_collection}). Skipping re-embedding...")
     except:
-        chroma_collection = chroma_client.get_or_create_collection("pdf_name")
+        chroma_collection = chroma_client.get_or_create_collection(pdf_collection)
         collection_exists = False
-        print("Existing collection not found.")
+        logging.info(f"Existing collection({pdf_collection}) not found.")
     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
     storage_context = StorageContext.from_defaults(docstore=docstore, vector_store=vector_store)
 
@@ -140,7 +144,7 @@ def fusionStore(temp_dir_path: str, pdf_name: str):
     return RetrieverQueryEngine(retriever)
 
 
-def rag_db(ctx: RunContext[llm.AgentDeps], query: str) -> str:
+def rag_db(ctx: RunContext[llm.AgentDeps], query: str) -> ToolReturn:
     """Database to query for information from the pdf documents.
 
     Args:

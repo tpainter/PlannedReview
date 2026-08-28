@@ -12,7 +12,7 @@ import requests
 
 import fsspec
 
-def nomic_github():
+def nomic_github() -> None:
     logging.info("Downloading local test files...")
     
     #nomic-ai/aec-bench: https://github.com/nomic-ai/aec-bench/tree/main/tasks
@@ -28,9 +28,9 @@ def nomic_github():
             use_listing_cache=True,
             listings_expiry_time=6000,)
 
-def nomic_pdf():
+def nomic_pdf() -> None:
     destination = Path("data") / "nomic_aec_bench"
-    pdf_files = []
+    pdf_files: list[str] = []
     n = 0
     err = 0
 
@@ -41,7 +41,7 @@ def nomic_pdf():
                 try:
                     with open(root + "/" + file, 'r', encoding='utf-8') as f:
                         for line in f:
-                            data = []
+                            data: list[dict[str, object]] = []
                             data.append(json.loads(line))
                             pdf_files.append(data[0]['key'])
                 except Exception as e:
@@ -76,7 +76,7 @@ def nomic_pdf():
                 
 
 
-def main():
+def main() -> None:
     logging.basicConfig(level=logging.INFO)
     
     #nomic_github()

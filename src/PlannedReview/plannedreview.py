@@ -10,30 +10,31 @@ from queries import Q000
 
 
 
-def plannedreview(pdf, prompt):
+def PlannedReview(pdf: str, prompt: str) -> None:
     
     # Provide a pdf document
     pdf_path = Path(pdf) 
-    pdf_name = pdf_path.stem
-
-    prompt = args.prompt
-    
+    pdf_name = pdf_path.stem    
     
     # Split PDF
     split = False
+    pdf_copy = False
     if split:
         pages_dir = file_tools.pdf_split_pages(pdf_path)
     else:
-        pages_dir = file_tools.pdf_move(pdf_path)
-    
+        if pdf_copy:
+            pages_dir = file_tools.pdf_move(pdf_path)
+        else:
+            pages_dir = pdf_path.parent
+
     # Setup llms
-    llm_location = 'local' # local, google
+    llm_location = 'google' # local, google
     agent = llm.setup_llms(llm_location)
 
     query_engine = db.vectorStore(pages_dir, pdf_name)   
     #query_engine = db.fusionStore(pages_dir, pdf_name) 
     
-    deps = llm.AgentDeps(query_engine=query_engine, pdf_path=pdf_path.parents[0])
+    deps = llm.AgentDeps(query_engine=query_engine, pdf_path=pdf_path.parent)
 
     # Run the query
     if prompt == "None":
@@ -60,4 +61,4 @@ if __name__ == "__main__":
     parser.add_argument("pdf", help = "The file name of the pdf to analyze.", type = str)
     parser.add_argument("-p", "--prompt", help="The prompt to sent to the plan agent.", default="None")
     args = parser.parse_args()
-    plannedreview(args.pdf, args.prompt)
+    PlannedReview(args.pdf, args.prompt)
