@@ -1,6 +1,8 @@
 
 import logging
+import sys
 import argparse
+import tomllib
 from pathlib import Path
 
 # plannedreview imports
@@ -11,25 +13,25 @@ from queries import Q000
 
 
 def PlannedReview(pdf: str, prompt: str) -> None:
-    
+
+    # Load configuration file
+    config_path = Path(__file__).resolve().parent / Path("config.toml")
+    with open(config_path, "rb") as f:
+        config = tomllib.load(f)
+
     # Provide a pdf document
     pdf_path = Path(pdf) 
     pdf_name = pdf_path.stem    
     
-    # Split PDF
-    split = False
-    pdf_copy = False
-    if split:
+    if config['utils']['split_pdf']:
         pages_dir = file_tools.pdf_split_pages(pdf_path)
     else:
-        if pdf_copy:
+        if config['utils']['copy_pdf']:
             pages_dir = file_tools.pdf_move(pdf_path)
         else:
             pages_dir = pdf_path.parent
 
-    # Setup llms
-    llm_location = 'google' # local, google
-    agent = llm.setup_llms(llm_location)
+    agent = llm.setup_llms(config['llm'])
 
     query_engine = db.vectorStore(pages_dir, pdf_name)   
     #query_engine = db.fusionStore(pages_dir, pdf_name) 
