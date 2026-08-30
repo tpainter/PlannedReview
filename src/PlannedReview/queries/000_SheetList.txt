@@ -1,0 +1,8 @@
+Find the sheet index or list of sheets from the document. 
+This is typically at within the first few sheets.
+
+Check that each sheet in the sheet list is included in the pdf document. 
+Check that each page in the pdf document is included in the sheet list.
+
+If no errors are found, respond with "No sheet list errors found."
+If errors are found, respond with the details of the error.

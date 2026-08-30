@@ -1,0 +1,7 @@
+Go through each sheet in the document one at a time.
+For any reference to another sheet, check that the referenced sheet contains the referenced information.
+
+This could be a detail callout such as "See detail 4 on sheet 8". This may also be written as "4/8".
+
+If no reference errors are found, respond with "No reference errors found."
+If reference errors are found, respond with the details of the errors and the page number.

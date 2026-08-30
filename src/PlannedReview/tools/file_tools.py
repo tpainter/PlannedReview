@@ -118,3 +118,12 @@ def write_json(ctx: RunContext[llm.AgentDeps], file_name: str, content: str) -> 
                     return_value = f'Error writing file. {file_path} ',
                 )
 
+def read_queries(query_path: Path) -> list:
+    """Read the queries from the queries directory and return them as a list of strings."""
+    queries = []
+    for query_file in query_path.glob("*.txt"):
+        with open(query_file, "r") as f:
+            queries.append(f.read())
+
+    logging.info(f"Loaded queries from {query_path}: {len(queries)}")
+    return queries

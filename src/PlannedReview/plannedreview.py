@@ -7,7 +7,6 @@ from pathlib import Path
 
 # plannedreview imports
 from tools import db, file_tools, llm
-from queries import Q000
 
 
 
@@ -40,9 +39,9 @@ def PlannedReview(pdf: str, prompt: str) -> None:
 
     # Run the query
     if prompt == "None":
-        for q in Q000.queries:
+        prompts = file_tools.read_queries(Path(__file__).resolve().parent / Path("queries"))
+        for q in prompts:
             user_prompt = q
-
             result = agent.run_sync(user_prompt, deps=deps)
             print(f"Tokens used: {result.usage.total_tokens:,}")
             print("Agent Response:")
