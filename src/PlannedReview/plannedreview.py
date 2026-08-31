@@ -21,21 +21,24 @@ def PlannedReview(pdf: str, prompt: str) -> None:
     # Provide a pdf document
     pdf_path = Path(pdf) 
     pdf_name = pdf_path.stem    
+
+    agent = llm.setup_llms(config['llm'])
     
     if config['utils']['split_pdf']:
         pages_dir = file_tools.pdf_split_pages(pdf_path)
+
+          
+        #query_engine = db.fusionStore(pages_dir, pdf_name)
     else:
         if config['utils']['copy_pdf']:
             pages_dir = file_tools.pdf_move(pdf_path)
+            query_engine = db.vectorStore(pages_dir, pdf_name, single_pdf=True) 
         else:
-            pages_dir = pdf_path.parent
-
-    agent = llm.setup_llms(config['llm'])
-
-    query_engine = db.vectorStore(pages_dir, pdf_name)   
-    #query_engine = db.fusionStore(pages_dir, pdf_name) 
+            pages_dir = pdf_path
+            query_engine = db.vectorStore(pages_dir, pdf_name, single_pdf=True) 
+     
     
-    deps = llm.AgentDeps(query_engine=query_engine, pdf_path=pdf_path.parent)
+    deps = llm.AgentDeps(query_engine=query_engine, pdf_path=pdf_path)
 
     # Run the query
     if prompt == "None":

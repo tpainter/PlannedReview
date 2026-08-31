@@ -70,12 +70,12 @@ def setup_chat_llm(llm_chat_config: dict) -> Any:
 
     elif llm_chat_config['provider'] == 'google':
         Settings.llm = GoogleGenAI(
-                model="gemini-3.6-flash",
+                model=llm_chat_config['model'],
                 api_key=llm_chat_config['api_key'],
         )
         
         provider = GoogleProvider(api_key=llm_chat_config['api_key'])
-        model = GoogleModel('gemini-3.6-flash', provider=provider)
+        model = GoogleModel(llm_chat_config['model'], provider=provider)
 
     # TODO: add other providers here as needed
 

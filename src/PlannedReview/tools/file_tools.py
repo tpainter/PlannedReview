@@ -50,21 +50,26 @@ def pdf_move(file_path: Path) -> Path:
             
     return temp_dir 
 
-def retreive_file(ctx: RunContext[llm.AgentDeps], file_name: str, page: int = 1) -> ToolReturn:
-    """Request a file name to retrieve the original pdf file. Only use filename from the database. 
+def retreive_file(ctx: RunContext[llm.AgentDeps], page: int = 1) -> ToolReturn:
+    """Request page from the pdf document. Only use filename from the database. 
 
     Args:
-        file_name: the pdf file name that is requested
         page: the page number to retreive from the pdf. default is the first page (1)
     """
-    logging.info(f'Requested PDF: {file_name} page {page}')
-    pdf_path = ctx.deps.pdf_path / Path(file_name)
+    pdf_path = ctx.deps.pdf_path
+    logging.info(f'Requested PDF: {pdf_path} page {page}')
+    
     
     #do some basic checking.
     # must be a *.pdf
-    if not file_name.endswith('.pdf'):
+    if not pdf_path.suffix == '.pdf':
         return ToolReturn(
             return_value = f'File is not a PDF. Only PDF files can be requested.',
+        )
+
+    if not pdf_path.exists():
+        return ToolReturn(
+            return_value = f'File does not exist. {pdf_path} ',
         )
 
     # requested page must be in the range of pages in the pdf
@@ -74,7 +79,7 @@ def retreive_file(ctx: RunContext[llm.AgentDeps], file_name: str, page: int = 1)
     elif page > len(pdf.pages):
         ToolReturn(
             return_value = f'''Error page number must be within number of pages in pdf. 
-            {file_name} contains {pdf.pages} pages.''',
+            {pdf_path} contains {pdf.pages} pages.''',
             )
 
     try:

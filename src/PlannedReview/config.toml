@@ -3,15 +3,15 @@ title = "PlannedReview Configuration File"
 [llm]
 
 [llm.chat]
-local = true
+local = false
 provider = "google" # openai, copilot, google ; assumed openai compatable if local = true
-model = "muse"
+model = "gemini-3.7-flash"
 api_key = "fake" # provide key here or in environment variable
 address = "http://192.168.0.50:8080/v1" # only required if local = true
 
 [llm.embed]
 local = true
-provider = "google" # openai, copilot, google
+provider = "local" # openai, copilot, google
 model = "gemma-embedding"
 api_key = "fake" # provide key here or in environment variable
 address = "http://192.168.0.50:8080/v1" # openai, copilot, google ; assumed openai compatable if local = true

@@ -22,7 +22,7 @@ import json
 from tools import llm
 
 
-def vectorStore(temp_dir_path: str, pdf_name: str) -> BaseQueryEngine:
+def vectorStore(temp_dir_path: str, pdf_name: str, single_pdf = True) -> BaseQueryEngine:
     """
     
     """
@@ -39,6 +39,7 @@ def vectorStore(temp_dir_path: str, pdf_name: str) -> BaseQueryEngine:
         chroma_collection = chroma_client.get_or_create_collection(pdf_collection)
         collection_exists = False
         logging.info(f"Existing collection({pdf_collection}) not found.")
+
     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
     storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
@@ -49,14 +50,19 @@ def vectorStore(temp_dir_path: str, pdf_name: str) -> BaseQueryEngine:
     else:
         # Initialize the Docling reader and load the document
         reader = DoclingReader(export_type=DoclingReader.ExportType.JSON)       
-        dir_reader = SimpleDirectoryReader(
-            input_dir=temp_dir_path,
-            file_extractor={".pdf": reader},
-            filename_as_id=True,
-        )
+
+        if single_pdf:
+            documents = reader.load_data(temp_dir_path)
+        else:
+            file_reader = SimpleDirectoryReader(
+                input_dir=temp_dir_path,
+                file_extractor={".pdf": reader},
+                filename_as_id=True,
+            )
+            documents = file_reader.load_data()
 
         logging.info(f"Parsing documents with Docling: {temp_dir_path}...")
-        documents = dir_reader.load_data()
+        
 
         node_parser = DoclingNodeParser()
         nodes = node_parser.get_nodes_from_documents(documents)
