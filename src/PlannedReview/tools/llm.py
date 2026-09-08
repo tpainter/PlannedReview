@@ -46,6 +46,7 @@ def setup_llms(llm_config: dict) -> Agent:
                   tools=[db.rag_db, 
                          file_tools.retreive_file,
                          file_tools.write_json,
+                         file_tools.markdown_to_pdf,
                          ],
                    model_settings={'timeout': 60.0*60*24},
                    tool_timeout=600,

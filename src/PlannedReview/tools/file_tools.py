@@ -1,15 +1,16 @@
 
 import logging
 import os
-
-from pydantic_ai import BinaryContent, ToolReturn
-
-from pypdf import PdfReader, PdfWriter #probably don't need this now that pymupdf is being used
-import pymupdf
 from pathlib import Path
 import shutil
 
+from pydantic_ai import BinaryContent, ToolReturn
 from pydantic_ai import RunContext
+
+from pypdf import PdfReader, PdfWriter #probably don't need this now that pymupdf is being used
+import pymupdf
+from markdown_pdf import MarkdownPdf, Section
+
 from tools import llm
 
 
@@ -132,3 +133,30 @@ def read_queries(query_path: Path) -> list:
 
     logging.info(f"Loaded queries from {query_path}: {len(queries)}")
     return queries
+
+def markdown_to_pdf(ctx: RunContext[llm.AgentDeps], markdown_text: str, pdf_file: str) -> ToolReturn:
+    """Write markdown text to a PDF file.
+
+    Args:
+        markdown_text: the markdown text to write to the PDF file
+        pdf_file: the PDF filename to write the converted text to
+    """
+
+    pdf_path = Path(ctx.deps.pdf_path).parent / pdf_file
+    pdf_path = pdf_path.with_suffix(".pdf")
+
+    try:
+        pdf = MarkdownPdf(toc_level=2,optimize=True)
+        pdf.add_section(Section(markdown_text))        
+        pdf.save(pdf_path)
+
+        logging.info(f'Wrote to {pdf_path}')
+
+        return ToolReturn(
+            return_value = f'Successfully wrote to {pdf_path}.',
+        )
+    except Exception as e:
+        logging.error(f'Error writing {pdf_path}: {e}')
+        return ToolReturn(
+            return_value = f'Error writing {pdf_path}: {e}',
+        )
