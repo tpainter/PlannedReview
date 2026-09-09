@@ -1,0 +1,8 @@
+Review the roof plans and roof drainage design information.
+
+Check that roof areas, slopes, ridges, valleys, crickets, drains, scuppers, gutters, downspouts, overflow provisions, penetrations, and access paths are shown.
+Check that roof edges, parapets, curbs, equipment, expansion joints, and roof levels coordinate with sections, elevations, structural plans, and mechanical plans.
+Check that drainage paths are continuous and that roof details and material references resolve to the depicted conditions.
+
+If no roof-plan errors are found, respond with "No roof-plan errors found."
+If errors are found, list each issue with the sheet/page number, roof area or location, observed condition, and needed correction.

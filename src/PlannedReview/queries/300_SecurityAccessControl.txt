@@ -1,0 +1,8 @@
+Review security, access-control, and controlled-opening information in the construction plan set.
+
+Check that card readers, door contacts, request-to-exit devices, cameras, intercoms, security panels, locks, and controlled doors are tagged and located consistently.
+Check that security devices coordinate with door hardware, electrical power, communications pathways, ceilings, sight lines, and life-safety egress.
+Check that security zones, schedules, riser diagrams, and device references agree across the drawings.
+
+If no security or access-control errors are found, respond with "No security or access-control errors found."
+If errors are found, list each issue with the sheet/page number, device or door location, affected system, and needed correction.

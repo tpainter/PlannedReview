@@ -1,0 +1,8 @@
+Review acoustical design information and sound-control details in the construction plan set.
+
+Check that acoustical wall, floor, ceiling, door, glazing, and equipment requirements are identified for spaces requiring sound isolation or control.
+Check that rated partitions, seals, penetrations, mechanical noise treatments, vibration isolation, and room adjacencies coordinate with the architectural and MEP drawings.
+Check that acoustical notes, details, schedules, and tags are consistent and do not conflict.
+
+If no acoustical errors are found, respond with "No acoustical errors found."
+If errors are found, list each issue with the sheet/page number, room or assembly, observed omission or conflict, and needed correction.

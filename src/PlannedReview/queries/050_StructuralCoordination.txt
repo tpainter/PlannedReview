@@ -1,0 +1,12 @@
+Review the coordination of architectural and structural information in the construction plan drawings.
+
+Check that:
+- Structural grids, column lines, bearing walls, footings, beams, joists, and slabs align between plans, sections, elevations, and structural references.
+- Column and wall locations do not conflict with doors, windows, stairs, shafts, rooms, or required clearances.
+- Openings, penetrations, depressions, slab edges, roof edges, and framed features are identified consistently.
+- Changes in level, foundation steps, retaining conditions, and support conditions are shown or clearly referenced.
+- Structural notes, member tags, and details referenced on architectural sheets exist and match the depicted condition.
+- Any apparent unsupported element, uncoordinated load path, or conflicting structural dimension is identified for professional review.
+
+Report coordination concerns without making engineering calculations or asserting structural adequacy. If no structural coordination errors are found, respond with "No structural coordination errors found."
+If errors are found, list each issue with the sheet/page number, location, affected elements, and the conflicting or missing information.

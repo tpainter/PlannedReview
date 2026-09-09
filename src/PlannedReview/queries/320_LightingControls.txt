@@ -1,0 +1,8 @@
+Review lighting layouts and lighting-control diagrams in the construction plan set.
+
+Check that lighting fixtures, emergency fixtures, switches, dimmers, occupancy sensors, daylight sensors, control zones, relay panels, and exterior lighting are shown consistently.
+Check that control locations, switching relationships, fixture types, ceiling conditions, and emergency-power requirements coordinate with the plans and schedules.
+Check that lighting-control diagrams and fixture schedules match the plan symbols and room functions.
+
+If no lighting-control errors are found, respond with "No lighting-control errors found."
+If errors are found, list each issue with the sheet/page number, room or fixture tag, conflicting control information, and needed correction.

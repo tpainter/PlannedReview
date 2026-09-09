@@ -1,0 +1,8 @@
+Review reflected ceiling plans and their coordination with architectural and MEP drawings in the construction plan set.
+
+Check that ceiling types, heights, grids, soffits, bulkheads, access panels, light fixtures, diffusers, grilles, sprinklers, detectors, and other ceiling devices are shown consistently.
+Check that ceiling layouts align with rooms, partitions, doors, structural elements, and equipment above the ceiling.
+Check that ceiling tags, keynote references, and details resolve correctly and that conflicts or inaccessible devices are identified.
+
+If no reflected-ceiling errors are found, respond with "No reflected-ceiling errors found."
+If errors are found, list each issue with the sheet/page number, room or location, conflicting elements, and needed correction.

@@ -1,0 +1,8 @@
+Review telecommunications, data, audiovisual, and low-voltage systems drawings in the construction plan set.
+
+Check that data outlets, telephone outlets, wireless access points, racks, telecom rooms, audiovisual devices, pathways, and cable tray routes are shown and tagged.
+Check that low-voltage devices coordinate with furniture, ceilings, electrical power, fire-rated assemblies, security systems, and equipment locations.
+Check that riser diagrams, room schedules, outlet symbols, and device tags agree.
+
+If no low-voltage or communications errors are found, respond with "No low-voltage or communications errors found."
+If errors are found, list each issue with the sheet/page number, device or pathway location, affected system, and needed correction.

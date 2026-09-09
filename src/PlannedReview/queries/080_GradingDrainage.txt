@@ -1,0 +1,8 @@
+Review grading, drainage, and stormwater information in the construction plan drawings.
+
+Check that spot elevations, contours, slopes, drainage arrows, swales, inlets, catch basins, downspouts, and discharge points form a clear and coordinated drainage strategy.
+Check that finished floor elevations, ramps, walks, drives, accessible routes, and site transitions have compatible elevations and slopes.
+Check that grading does not direct water toward buildings or create unexplained low points, and that drainage references resolve to the correct details.
+
+If no grading or drainage errors are found, respond with "No grading or drainage errors found."
+If errors are found, list each issue with the sheet/page number, location, conflicting elevations or slopes, and needed correction.

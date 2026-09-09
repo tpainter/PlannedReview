@@ -1,0 +1,8 @@
+Review the exterior elevations and their coordination with the plans and sections.
+
+Check that all building facades, materials, openings, doors, windows, roof edges, parapets, levels, and exterior equipment are represented and labeled.
+Check that elevation markers, heights, datums, material transitions, joints, canopies, screens, and visible site elements align with the floor plans and roof plans.
+Check that exterior details and references resolve to the conditions shown and that no facade element is missing or contradictory.
+
+If no exterior-elevation errors are found, respond with "No exterior-elevation errors found."
+If errors are found, list each issue with the sheet/page number, elevation or grid location, observed discrepancy, and needed correction.

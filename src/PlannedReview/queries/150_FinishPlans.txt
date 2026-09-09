@@ -1,0 +1,8 @@
+Review finish plans, finish schedules, and room finish information.
+
+Check that rooms have consistent floor, wall, base, ceiling, and paint or coating designations where finishes are required.
+Check that finish tags and schedule entries exist for all applicable spaces and agree with room names, wet areas, rated assemblies, and elevations.
+Check that transitions, control joints, cove bases, ceiling changes, and special finish conditions are shown or referenced clearly.
+
+If no finish-plan errors are found, respond with "No finish-plan errors found."
+If errors are found, list each issue with the sheet/page number, room or location, conflicting finish information, and needed correction.

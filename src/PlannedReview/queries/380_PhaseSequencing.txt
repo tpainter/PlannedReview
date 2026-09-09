@@ -1,0 +1,8 @@
+Review construction phasing, sequencing, and temporary-condition information in the construction plan set.
+
+Check that phase limits, temporary partitions, temporary egress, occupied areas, shutdowns, relocations, temporary utilities, and protection requirements are identified.
+Check that proposed work is constructible in the stated sequence and that phase drawings coordinate with demolition, life safety, access, and MEP shutdown information.
+Flag missing transitions, contradictory phase boundaries, or conditions that could leave an area without required access or protection.
+
+If no phasing or sequencing errors are found, respond with "No phasing or sequencing errors found."
+If errors are found, list each issue with the sheet/page number, phase or location, affected condition, and needed correction.

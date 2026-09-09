@@ -1,0 +1,8 @@
+Review existing-condition surveys, record information, and field-verification notes in the construction plan set.
+
+Check that existing grades, utilities, structures, dimensions, materials, equipment, openings, and site features shown as verified are identified consistently.
+Check that field-verify notes, survey references, benchmarks, existing drawings, and proposed work coordinate without unexplained conflicts.
+Flag dimensions or conditions that are marked for verification but are relied upon by new construction without a clear resolution.
+
+If no existing-condition documentation errors are found, respond with "No existing-condition documentation errors found."
+If errors are found, list each issue with the sheet/page number, existing condition, conflict or uncertainty, and needed correction.

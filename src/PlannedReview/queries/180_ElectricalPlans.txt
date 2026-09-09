@@ -1,0 +1,8 @@
+Review the electrical plans, panel schedules, lighting plans, and one-line information.
+
+Check that panels, disconnects, transformers, generators, equipment connections, receptacles, switches, lighting fixtures, emergency devices, and grounding components are tagged and located consistently.
+Check that panel schedules agree with circuit identifiers, connected equipment, voltages, phases, and the plan symbols.
+Check that electrical equipment has indicated access and working clearances and that raceway or cable routes coordinate with structure, ceilings, and other systems.
+
+If no electrical errors are found, respond with "No electrical errors found."
+If errors are found, list each issue with the sheet/page number, location or tag, conflicting information, and needed correction.

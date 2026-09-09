@@ -1,0 +1,8 @@
+Review the plumbing plans, riser diagrams, fixture schedules, and plumbing details.
+
+Check that plumbing fixtures, equipment, cleanouts, floor drains, risers, valves, vents, water lines, sanitary lines, and storm connections are tagged and coordinated.
+Check that fixture schedules agree with plan symbols, room layouts, pipe sizes, connection points, and accessibility requirements.
+Check that pipe routes, slopes, shafts, sleeves, penetrations, and access locations are shown consistently with architectural and structural drawings.
+
+If no plumbing errors are found, respond with "No plumbing errors found."
+If errors are found, list each issue with the sheet/page number, location or tag, affected system, and missing or conflicting information.

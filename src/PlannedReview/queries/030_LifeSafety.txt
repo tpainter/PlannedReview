@@ -1,0 +1,12 @@
+Review the life-safety information shown throughout the construction plan document.
+
+Check that:
+- Occupant loads, occupancy classifications, and required exits are identified where applicable.
+- Exit paths are continuous, clearly marked, and lead to an exterior exit or other indicated safe discharge.
+- Exit doors swing and are located consistently with the egress path, and required exit signage or emergency lighting is shown when expected.
+- Corridors, aisles, stairs, ramps, and exit doors have the required widths or clearly stated dimensions.
+- Fire-rated walls, doors, shafts, smoke barriers, and penetrations are identified consistently between plans, sections, schedules, and details.
+- Life-safety symbols and notes are not missing, ambiguous, or contradictory.
+
+Use only information present in the document; flag items that require confirmation rather than inventing code values. If no life-safety errors are found, respond with "No life-safety errors found."
+If errors are found, list each issue with the sheet/page number, location, observed condition, and the information or coordination needed to resolve it.

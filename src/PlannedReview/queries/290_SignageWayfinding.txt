@@ -1,0 +1,8 @@
+Review building signage, room identification, wayfinding, and regulatory sign locations in the construction plan set.
+
+Check that room signs, directional signs, exit signs, accessible signs, restroom signs, hazard signs, addresses, and exterior identification signs are tagged and located consistently.
+Check that sign mounting heights, visibility, clearances, languages, symbols, and accessible-route relationships are documented where applicable.
+Check that sign schedules, elevations, details, and plan locations agree.
+
+If no signage or wayfinding errors are found, respond with "No signage or wayfinding errors found."
+If errors are found, list each issue with the sheet/page number, sign tag or location, observed omission or conflict, and needed correction.

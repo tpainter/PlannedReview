@@ -1,0 +1,8 @@
+Review demolition plans and demolition notes.
+
+Check that existing, removed, relocated, and protected items are distinguished consistently.
+Check that demolition limits, selective demolition, abandoned utilities, removals, temporary protection, and required patching are clearly shown.
+Check that demolition plans coordinate with new work plans, structural work, MEP work, hazardous-material notes, and phasing requirements.
+
+If no demolition-plan errors are found, respond with "No demolition-plan errors found."
+If errors are found, list each issue with the sheet/page number, location, affected existing condition, and needed correction.

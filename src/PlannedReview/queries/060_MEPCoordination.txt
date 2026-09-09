@@ -1,0 +1,12 @@
+Review the coordination of mechanical, electrical, plumbing, and fire-protection information with the construction plan drawings.
+
+Check that:
+- Equipment, panels, fixtures, risers, shafts, and service rooms are shown consistently between plans, schedules, diagrams, and details.
+- Mechanical ducts, piping, cable trays, and electrical equipment do not visibly conflict with structure, doors, ceilings, stairs, required clearances, or one another.
+- Plumbing fixtures connect to indicated supply, waste, vent, and riser systems where those systems are shown.
+- Mechanical and electrical equipment has documented access, maintenance, and working clearances where applicable.
+- Fire-protection devices, sprinkler zones, smoke-control components, and fire-rated penetrations are coordinated with architectural and life-safety information.
+- MEP tags and referenced details resolve to the correct sheet and do not identify contradictory equipment or locations.
+
+Do not infer concealed conditions that are not shown. If no MEP coordination errors are found, respond with "No MEP coordination errors found."
+If errors are found, list each issue with the sheet/page number, location, affected systems, and the conflict or missing coordination information.

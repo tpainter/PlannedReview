@@ -1,0 +1,8 @@
+Review the HVAC plans, equipment schedules, and air-distribution information.
+
+Check that equipment tags, locations, capacities, ducts, diffusers, grilles, exhaust points, controls, shafts, and service clearances are coordinated.
+Check that supply, return, exhaust, outside-air, and relief-air paths are identified and connect to the correct spaces or equipment.
+Check that HVAC penetrations, roof curbs, ceiling layouts, fire or smoke dampers, and access panels agree with architectural and structural drawings.
+
+If no HVAC errors are found, respond with "No HVAC errors found."
+If errors are found, list each issue with the sheet/page number, location, affected equipment or air path, and needed correction.

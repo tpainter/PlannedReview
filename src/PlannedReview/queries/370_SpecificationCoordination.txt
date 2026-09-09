@@ -1,0 +1,8 @@
+Review coordination between drawing notes, schedules, details, and referenced specifications in the construction plan set.
+
+Check that material names, product types, performance requirements, finish descriptions, installation requirements, and section references are consistent wherever they appear.
+Check that referenced specification sections exist in the document when provided and that drawing notes do not contradict schedules or details.
+Identify unclear substitutions, obsolete references, missing product information, and conflicting requirements.
+
+If no specification-coordination errors are found, respond with "No specification-coordination errors found."
+If errors are found, list each issue with the sheet/page number, affected material or system, conflicting reference, and needed correction.

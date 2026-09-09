@@ -1,0 +1,8 @@
+Review casework, millwork, cabinetry, countertops, and built-in equipment shown in the construction plan set.
+
+Check that each casework or millwork tag is scheduled, located, dimensioned, and coordinated with adjacent walls, doors, windows, plumbing, electrical, and equipment.
+Check that clearances, access panels, service connections, hardware, materials, edge conditions, and backing requirements are shown.
+Check that accessible work surfaces, sinks, appliances, and storage components agree with the plans and interior elevations.
+
+If no casework or millwork errors are found, respond with "No casework or millwork errors found."
+If errors are found, list each issue with the sheet/page number, tag or location, conflicting information, and needed correction.

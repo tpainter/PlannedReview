@@ -1,0 +1,8 @@
+Review erosion, sediment-control, and construction-phase site protection drawings in the construction plan set.
+
+Check that limits of disturbance, stabilized entrances, silt fencing, inlet protection, sediment basins, stockpile areas, staging areas, and construction access are shown.
+Check that temporary controls coordinate with grading, drainage, property boundaries, adjacent properties, watercourses, and project phasing.
+Check that maintenance, removal, restoration, and inspection notes are present where indicated by the drawings.
+
+If no erosion or sediment-control errors are found, respond with "No erosion or sediment-control errors found."
+If errors are found, list each issue with the sheet/page number, location, missing control, and needed correction.

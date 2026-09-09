@@ -1,0 +1,8 @@
+Review thermal insulation, energy-conservation, and energy-code drawing information in the construction plan set.
+
+Check that insulation, thermal breaks, air barriers, fenestration values, roof assemblies, slab edges, foundation insulation, and building-envelope transitions are identified.
+Check that energy notes, assembly tags, schedules, glazing information, and equipment assumptions agree across the drawings.
+Flag missing or contradictory energy information without assigning code values that are not stated in the document.
+
+If no thermal or energy-documentation errors are found, respond with "No thermal or energy-documentation errors found."
+If errors are found, list each issue with the sheet/page number, assembly or location, conflicting information, and needed correction.

@@ -1,0 +1,8 @@
+Review drawing schedules, legends, abbreviations, keynote lists, and general notes.
+
+Check that symbols used in the drawings appear in the correct legends and that abbreviations and keynotes are defined consistently.
+Check that schedules for rooms, equipment, materials, assemblies, hardware, fixtures, and other components contain the referenced tags and do not include unexplained duplicates or omissions.
+Check that general notes and code notes are consistent across disciplines and do not conflict with the plans, details, or specifications.
+
+If no schedule or legend errors are found, respond with "No schedule or legend errors found."
+If errors are found, list each issue with the sheet/page number, affected schedule or legend item, and needed correction.

@@ -1,0 +1,8 @@
+Review building-envelope waterproofing, flashing, and moisture-control details in the construction plan set.
+
+Check that foundations, below-grade walls, roofs, parapets, windows, doors, transitions, penetrations, expansion joints, and horizontal surfaces have coordinated water-management details.
+Check that membranes, flashings, weeps, drainage planes, sealants, end dams, terminations, insulation, and vapor-control layers are continuous or intentionally transitioned.
+Check that envelope details agree with wall sections, elevations, window schedules, roof plans, and material specifications shown in the documents.
+
+If no waterproofing or envelope errors are found, respond with "No waterproofing or envelope errors found."
+If errors are found, list each issue with the sheet/page number, detail or location, missing continuity, and needed correction.

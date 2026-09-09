@@ -1,0 +1,8 @@
+Review furniture, equipment, and specialty equipment plans in the construction plan set.
+
+Check that movable and fixed equipment is tagged, scheduled, located, and dimensioned consistently.
+Check that equipment clearances, anchorage, utility connections, ventilation, access, delivery paths, and maintenance zones are shown where applicable.
+Check that equipment does not conflict with doors, accessible routes, structure, ceilings, plumbing, electrical, HVAC, or fire-protection devices.
+
+If no furniture or equipment errors are found, respond with "No furniture or equipment errors found."
+If errors are found, list each issue with the sheet/page number, equipment tag or location, affected coordination, and needed correction.

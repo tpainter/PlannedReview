@@ -1,0 +1,8 @@
+Review temporary works and construction-support information shown in the construction plan set.
+
+Check that shoring, underpinning, excavation support, temporary bracing, protection, weather enclosures, temporary stairs, barriers, and temporary access are identified where required.
+Check that temporary works coordinate with existing structures, adjacent property, utilities, construction access, phasing, and permanent work.
+Report missing design responsibility, unclear limits, or conflicting temporary conditions without performing engineering calculations.
+
+If no temporary-works errors are found, respond with "No temporary-works errors found."
+If errors are found, list each issue with the sheet/page number, location, temporary element, and needed clarification or correction.

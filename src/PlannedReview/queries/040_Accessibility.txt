@@ -1,0 +1,12 @@
+Review the drawings for accessibility and accessible-route coordination.
+
+Check that:
+- An accessible route is shown from accessible site arrival points and entrances to the occupied spaces and required amenities.
+- Door clearances, maneuvering clearances, corridor widths, and turning spaces are dimensioned or otherwise adequately documented.
+- Ramps, stairs, elevators, and changes in level are shown with consistent slopes, landings, handrails, guards, and detectable warnings where applicable.
+- Accessible toilet rooms and fixtures have consistent layouts, clearances, grab bars, and approach spaces.
+- Accessible parking, curb ramps, entrances, and path-of-travel information are coordinated between site and building sheets.
+- Accessibility notes, symbols, elevations, and details agree across the plan set.
+
+Do not assume compliance solely because an accessibility symbol is present. If no accessibility errors are found, respond with "No accessibility errors found."
+If errors are found, list each issue with the sheet/page number, location, observed condition, and the missing, conflicting, or unclear information.

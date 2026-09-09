@@ -1,0 +1,8 @@
+Review landscape plans, planting plans, and landscape details in the construction plan set.
+
+Check that planting areas, tree locations, species or sizes, irrigation zones, soil preparation, mulch, paving interfaces, and landscape structures are identified.
+Check that plantings and site features coordinate with utilities, grading, drainage, accessible routes, fire access, sight lines, and building foundations.
+Check that landscape schedules, symbols, details, and notes are consistent with the plan.
+
+If no landscape-plan errors are found, respond with "No landscape-plan errors found."
+If errors are found, list each issue with the sheet/page number, location, affected landscape or site element, and needed correction.

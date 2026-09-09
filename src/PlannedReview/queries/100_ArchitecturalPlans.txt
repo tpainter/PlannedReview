@@ -1,0 +1,8 @@
+Review the architectural floor plans for completeness and internal coordination.
+
+Check that rooms, walls, doors, windows, stairs, ramps, shafts, ceilings, major equipment, and room names are shown consistently.
+Check that plan symbols, keynotes, tags, north arrows, grids, dimensions, and detail references are legible and used consistently.
+Check that wall types, partitions, openings, and changes in level agree with the related sections, elevations, schedules, and details.
+
+If no architectural-plan errors are found, respond with "No architectural-plan errors found."
+If errors are found, list each issue with the sheet/page number, location, affected elements, and needed correction.

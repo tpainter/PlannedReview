@@ -1,0 +1,8 @@
+Review the fire-protection plans and their coordination with architectural and MEP drawings.
+
+Check that sprinkler heads, valves, risers, hose connections, standpipes, fire department connections, fire pumps, alarms, and related equipment are shown and tagged consistently.
+Check that coverage areas, obstructions, ceiling changes, soffits, beams, rated assemblies, and access requirements are coordinated with the plans and reflected ceiling plans.
+Check that fire-protection devices and system references resolve to the correct details, diagrams, and schedules.
+
+If no fire-protection errors are found, respond with "No fire-protection errors found."
+If errors are found, list each issue with the sheet/page number, location, affected device or system, and needed correction.

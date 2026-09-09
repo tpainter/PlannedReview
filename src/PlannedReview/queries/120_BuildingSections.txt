@@ -1,0 +1,8 @@
+Review the building sections for vertical coordination and completeness.
+
+Check that floor-to-floor heights, ceilings, roofs, foundations, shafts, stairs, wall assemblies, structure, and major building systems align vertically.
+Check that section cuts are identified on the plans, section references resolve correctly, and critical transitions are shown or referenced.
+Check that levels, datums, clearances, penetrations, fire-rated assemblies, and weather barriers are consistent with plans, elevations, and details.
+
+If no building-section errors are found, respond with "No building-section errors found."
+If errors are found, list each issue with the sheet/page number, section or grid location, conflicting elements, and needed correction.

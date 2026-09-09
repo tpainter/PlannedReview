@@ -1,0 +1,8 @@
+Review the existing and proposed site utility plans.
+
+Check that water, sanitary sewer, storm sewer, gas, electrical, communications, and other utilities are labeled and routed consistently.
+Check that utility sizes, inverts, slopes, connection points, easements, valves, cleanouts, manholes, and service entrances are shown where applicable.
+Check that utility routes coordinate with buildings, foundations, paving, landscaping, and other utilities, including required separation or crossing information.
+
+If no site-utility errors are found, respond with "No site-utility errors found."
+If errors are found, list each issue with the sheet/page number, location, affected utility, and missing or conflicting information.

@@ -1,0 +1,8 @@
+Review the site plan and its coordination with the building plans.
+
+Check that property lines, easements, setbacks, rights-of-way, building footprints, north arrows, and site access are identified consistently.
+Check that entrances, walks, drives, parking, loading areas, accessible spaces, curbs, and site features align with the architectural plans.
+Check that required site dimensions, labels, legends, and references are present and readable.
+
+If no site-plan errors are found, respond with "No site-plan errors found."
+If errors are found, list each issue with the sheet/page number, location, observed condition, and needed correction.

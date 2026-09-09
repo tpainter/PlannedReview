@@ -1,0 +1,8 @@
+Review wall sections, wall types, and construction assembly details.
+
+Check that exterior walls, interior partitions, floors, roofs, foundations, parapets, openings, and transitions have complete assembly information.
+Check that materials, thicknesses, insulation, air and water barriers, flashings, sealants, fire stopping, and termination conditions are identified where required.
+Check that detail callouts, wall-type tags, and assembly references match the plans, sections, schedules, and specifications.
+
+If no assembly-detail errors are found, respond with "No assembly-detail errors found."
+If errors are found, list each issue with the sheet/page number, detail or wall type, missing component, and needed correction.

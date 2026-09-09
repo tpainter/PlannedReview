@@ -1,0 +1,8 @@
+Review door and window schedules and their coordination with the drawings.
+
+Check that every door and window tag used on plans and elevations appears in the appropriate schedule, and that scheduled items are placed where referenced.
+Check that sizes, types, ratings, hardware, glazing, materials, operation, sill conditions, and accessibility requirements are consistent with the plans and details.
+Check that fire-rated, egress, acoustic, security, and specialty openings are identified consistently and that duplicate or unused tags are reported.
+
+If no door or window schedule errors are found, respond with "No door or window schedule errors found."
+If errors are found, list each issue with the sheet/page number, tag, location, conflicting schedule information, and needed correction.

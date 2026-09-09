@@ -1,0 +1,13 @@
+Review the dimensioning on each plan sheet in the document.
+
+Check that:
+- Critical overall dimensions, room dimensions, and grid-to-grid dimensions are present where needed.
+- Dimension strings are readable, use consistent units, and do not conflict with one another.
+- Dimensions agree with the geometry, wall locations, openings, and stated areas shown on the drawings.
+- Important offsets, clearances, and elevations are dimensioned or clearly controlled by a referenced detail.
+- Duplicate dimensions do not create contradictory requirements.
+
+Do not infer exact measurements when the drawing does not provide enough information. Report only issues supported by the document.
+
+If no dimension errors are found, respond with "No dimension errors found."
+If dimension errors are found, list each issue with the sheet/page number, the affected location or element, the conflicting or missing information, and a concise recommended correction.

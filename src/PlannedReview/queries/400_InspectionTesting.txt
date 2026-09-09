@@ -1,0 +1,8 @@
+Review inspection, testing, commissioning, and quality-control requirements shown in the construction plan set.
+
+Check that required inspections, tests, mockups, field verification, commissioning activities, special inspections, and approvals are identified for applicable systems and assemblies.
+Check that testing notes agree with schedules, details, equipment, life-safety systems, envelope assemblies, and referenced specifications.
+Identify requirements that lack a responsible party, acceptance criterion, location, or clear reference.
+
+If no inspection or testing errors are found, respond with "No inspection or testing errors found."
+If errors are found, list each issue with the sheet/page number, affected system or assembly, missing requirement, and needed correction.

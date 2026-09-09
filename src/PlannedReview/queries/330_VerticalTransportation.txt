@@ -1,0 +1,8 @@
+Review elevators, lifts, dumbwaiters, and other vertical-transportation systems in the construction plan set.
+
+Check that shafts, pits, overhead spaces, machine rooms, doors, landings, controls, clearances, and equipment spaces are shown consistently.
+Check that elevator and lift dimensions, accessible approaches, fire-rated enclosures, structural supports, sump or drainage provisions, and MEP connections coordinate across plans and sections.
+Check that equipment schedules, elevations, and details match the plan locations.
+
+If no vertical-transportation errors are found, respond with "No vertical-transportation errors found."
+If errors are found, list each issue with the sheet/page number, shaft or landing location, affected condition, and needed correction.

@@ -1,0 +1,8 @@
+Review interior elevations and interior finish details in the construction plan set.
+
+Check that interior elevations identify the correct rooms, walls, cabinetry, counters, fixtures, equipment, accessories, materials, and mounting heights.
+Check that interior elevation conditions coordinate with floor plans, finish plans, door and window schedules, accessibility requirements, and MEP devices.
+Check that wall protection, backsplashes, trim, joints, transitions, and special details are shown where required.
+
+If no interior-elevation errors are found, respond with "No interior-elevation errors found."
+If errors are found, list each issue with the sheet/page number, room or wall location, observed discrepancy, and needed correction.
