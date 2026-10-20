@@ -43,12 +43,44 @@ def PlannedReview(pdf: str, prompt: str) -> None:
     # Run the query
     if prompt == "None":
         prompts = file_tools.read_queries(Path(__file__).resolve().parent / Path("queries"))
-        for q in prompts:
-            user_prompt = q
-            result = agent.run_sync(user_prompt, deps=deps)
-            print(f"Tokens used: {result.usage.total_tokens:,}")
-            print("Agent Response:")
-            print(result.output)
+        if not prompts:
+            logging.warning("No prompts found; skipping review.")
+            return
+
+        responses_path = pdf_path.with_name(f"{pdf_name}_review_responses.md")
+        with responses_path.open("w", encoding="utf-8") as responses_file:
+            for index, user_prompt in enumerate(prompts, start=1):
+                result = agent.run_sync(user_prompt, deps=deps)
+                logging.info("Prompt %d tokens used: %s", index, f"{result.usage.total_tokens:,}")
+                logging.info("Agent Response:")
+                logging.info(result.output)
+                responses_file.write(
+                    f"## Prompt {index}\n\n"
+                    f"{user_prompt}\n\n"
+                    f"### Response\n\n"
+                    f"{result.output}\n\n"
+                    "---\n\n"
+                )
+                responses_file.flush()
+
+        saved_responses = responses_path.read_text(encoding="utf-8")
+        summary_prompt = (
+            "Summarize the findings in the saved prompt responses below. "
+            "Synthesize recurring issues, highlight important individual findings, "
+            "and note any conflicts or uncertainties. Do not perform a new plan review; "
+            "base the summary only on these responses.\n\n"
+            f"{saved_responses}"
+        )
+        summary_result = agent.run_sync(summary_prompt, deps=deps)
+        with responses_path.open("a", encoding="utf-8") as responses_file:
+            responses_file.write(
+                f"## Summary\n\n{summary_result.output}\n"
+            )
+
+        print(f"Saved prompt responses and summary to: {responses_path}")
+        print(f"Summary tokens used: {summary_result.usage.total_tokens:,}")
+        print("Agent Summary:")
+        print(summary_result.output)
     else:
         user_prompt = prompt
         result = agent.run_sync(user_prompt, deps=deps)

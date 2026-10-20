@@ -1,0 +1,3582 @@
+RBI-002-07 TYPICAL GUARDRAIL INSTALLATIONS
+
+RBR-005-11
+
+GUARDRAIL COMPONENTS
+
+RBR-016-05 TIMBER GUARDRAIL POSTS
+
+BGX-006-10 STENCILS FOR STRUCTURES
+
+BBP-003-02 ELASTOMERIC BEARING PADS FOR BOX BEAMS
+
+BDP-001-05
+
+BDP-002-03
+
+BDP-003-03
+
+BDP-004-03
+
+BDP-005-05 RAILING SYSTEM TYPE II
+
+BJE-001-13
+
+BOX BEAM BEARING DETAILS
+
+BOX BEAM GENERAL NOTES &amp; REFERENCES
+
+BOX BEAM MISCELLANEOUS DETAILS
+
+BOX BEAM TENSION ROD DETAILS
+
+NEOPRENE EXPANSION DAM AND ARMORED EDGES
+
+RDI-040-01
+
+EROSION CONTROL BLANKET SLOPE INSTALLATION
+
+RDX-210-03
+
+TEMPORARY SILT FENCE
+
+RDX-220-05
+
+RDX-225-01 SILT TRAP B
+
+SILT TRAP A
+
+RGX-001-06
+
+MISCELLANEOUS STANDARDS
+
+SEPIA 024
+
+TYPICAL GUARDRAIL INSTALLATIONS
+
+SEPIA 027
+
+SEPIA 028
+
+STEEL GUARDRAIL POSTS
+
+STEEL BEAM GUARDRAIL ("W" BEAM)
+
+SEPIA 032
+
+SEPIA 034
+
+SEPIA 035
+
+DELINEATORS FOR GUARDRAIL
+
+GUARDRAIL END TREATMENT TYPE 7
+
+RAILING SYSTEM TYPE II GUARDRAIL TREATMENT
+
+RGX-200-01
+
+ONE POINT PROCTOR FAMILY OF CURVES
+
+BDP-009-04 BOX BEAM B27 &amp; CB27 DETAILS
+
+SEPIA 009
+
+SEPIA 010
+
+TREATMENT OF EMBANKMENTS AT END BENTS
+
+TREATMENT OF EMBANKMENTS AT END BENTS-DETAILS
+
+ROLLING
+
+## STANDARD DRAWINGS
+
+E-SHEET NAME:
+
+Mi croStati on v8. 1 1 . 7. 443
+
+## DESIGN CRITERIA
+
+## DESIGNED
+
+CLASS OF HIGHWAY
+
+TYPE OF TERRAIN
+
+DESIGN SPEED
+
+REQUIRED NPSD
+
+REQUIRED PSD
+
+LEVEL OF SERVICE
+
+DHV
+
+D %
+
+T %
+
+% RESTRICTED SD
+
+LEVEL OF SERVICE
+
+MAX. DISTANCE W/O PASSING
+
+LATITUDE DEGREES LONGITUDE SECONDS WEST SECONDS NORTH DEGREES MINUTES MINUTES 27 58 39 24 86 37
+
+ADT PRESENT (
+
+)
+
+ADT FUTURE (
+
+)
+
+## GEOGRAPHIC COORDINATES
+
+RURAL LOCAL
+
+2006
+
+53
+
+DATE PLOTTED:
+
+USER:
+
+FI LE NAME:   . . . \d01 47498\Layout Sheet. dgn
+
+1 2: 50: 06 AM
+
+agi l l ey
+
+1 /4/201 9
+
+## ACTIVE SEPIAS
+
+BPS-003-09 HP12X53 STEEL PILE
+
+R001 00LS
+
+SEPIA 031
+
+ANCHOR
+
+GUARDRAIL END TREATMENT TYPE 7 ALTERNATE
+
+## TRANSPORTATION CABINET DEPARTMENT OF HIGHWAYS
+
+## OVER BARASS DITCH JOHNSON SCHOOL ROAD (CR 1414) OHIO COUNTY
+
+STA. 2+84.27
+
+## LOCATION MAP
+
+Digitally signed by
+
+Michael J. Vickers Michael J. Vickers Date: 2019.01.04
+
+14:02:13-06'00'
+
+E X I S T I N G   B R I D G E   I D : 09 2 C 0 0 0 8 0 N
+
+Sheet No.
+
+R1
+
+R2
+
+R3
+
+R4
+
+S1
+
+S2
+
+S3
+
+S4
+
+COUNTY OF
+
+ITEM NO.
+
+SHEET NO.
+
+OHIO
+
+2-10014
+
+R1
+
+## INDEX OF SHEETS
+
+Description
+
+TITLE SHEET
+
+TYPICAL SECTION SHEET
+
+PLAN SHEET
+
+PROFILE SHEET
+
+GENERAL NOTES
+
+LAYOUT SHEET
+
+PILE RECORD
+
+PILE END BENTS 1 &amp; 2
+
+## SPECIAL NOTES
+
+CONTRACT COMPLETION DATE AND LIQUIDATED DAMAGES
+
+TRAFFIC CONTROL
+
+EROSION PREVENTION AND SEDIMENT CONTROL
+
+BRIDGE DEMOLITION
+
+CONCRETE COATING
+
+TREE CLEARING RESTRICTION
+
+## SPECIAL PROVISIONS
+
+69 EMBANKMENT AT BRIDGE END BENT STRUCTURES
+
+## SPECIFICATIONS
+
+Construction. 2012 Standard Specifications for Road and Bridge
+
+Current Interims. 2017 AASHTO LRFD Bridge Design Specifications with
+
+COUNTY OF Commonwealth of Kentucky DEPARTMENT OF HIGHWAYS
+
+OHIO
+
+2-10014 ITEM NO.
+
+NUMBER:
+
+LETTING DATE: FEBRUARY 22, 2019
+
+PROJECT
+
+DRAWING NO.
+
+27866
+
+STATE HIGHWAY ENGINEER
+
+PROJECT MANAGER
+
+RECOMMENDED BY:
+
+DATE:
+
+PLAN APPROVED BY:
+
+DATE:
+
+SURVEY LINE
+
+GRADE LINE
+
+GROUND LINE
+
+COUNTY LINE
+
+CORPORATE LIMITS
+
+EXIST. PROPERTY LINE
+
+EXIST. RIGHT OF WAY &amp; PROPERTY LINE
+
+PROPOSED RIGHT OF WAY
+
+RIGHT OF WAY MONUMENT
+
+BENCH MARK
+
+EXISTING R/W MARKER
+
+RIGHT OF WAY MONUMENT
+
+EXISTING/
+
+PROPOSED
+
+UTILITY TEST HOLE
+
+EXISTING ROAD
+
+RAILROAD
+
+FENCE (CONTROLLED ACCESS)
+
+FENCE (EXCEPT STONE AND HEDGE)
+
+TREE LINE
+
+TREES
+
+PIPE CULVERT
+
+CULVERT
+
+BRIDGE
+
+BUILDINGS
+
+GUARDRAIL
+
+## CONVENTIONAL SIGNS
+
+400' V.C.
+
+1-S
+
+FRAME
+
+END TREATMENT
+
+P L
+
+B.M. NO.4
+
+TH
+
+1-S
+
+BRICK
+
+SHED
+
+GUARDRAIL
+
+2-S
+
+BRICK
+
+TERMINAL
+
+SECTION
+
+Detail "A"
+
+NOTES:
+
+- 1 Width varies and the location to be determined by the field engineer.
+
+SPECIAL NOTES:
+
+## FOUNDATION PREPARATION
+
+Contrary to Sections 4 &amp; 5 of SPECIAL PROVISION 69 (EMBANKMENT AT BRIDGE END STRUCTURES),
+
+Structural Granular Backfill, as required by Special Provision No. 69 and applicable Sepia
+
+Drawings 009 and 010, will not be measured and paid as a separate bid item. The required
+
+Structural Granular Backfill along with the geotextile fabric, perforated pipe, and pile core
+
+(if necessary) will be incidental to the Lump Sum item of Foundation Preparation. Any
+
+earthwork (excavation, embankment, grading, etc.) required for roadway approach work will
+
+also be incidental to the Lump Sum item of Foundation Preparation.
+
+## GRANULAR EMBANKMENT FOR GUARDRAIL
+
+be considered for additional payment. directed. Variance of actual cross sectional quantities versus theoretical quantities will not yard of granular embankment is full compensation for widening the shoulder for guardrail as achieve the quantity per side of the roadway. Payment at the contract unit price per cubic a linear foot of placement multiplied by a theoretical cross section of 12 square feet to the quantity in cubic yards. The Department will measure along the centerline to determine place embankment in a manner to ensure proper compaction. The Department will measure granular embankment as directed by the Engineer. Remove existing topsoil as needed and When necessary to ensure compliance with standards, widen shoulders behind guardrail with
+
+BEFORE YOU DIG
+
+utility companies have facilities in the area. may be necessary for the contractor to contact the County Court Clerk to determine what excavation with the utility owners, including those whom do not subscribe to KY 811.  It members of the KY 811 one-call Before-U-Dig (BUD) service.  The contractor must coordinate contractor should be aware that owners of underground facilities are not required to be a minimum of two (2) and no more than ten (10) business days prior to excavation.  The for information on the location of existing underground utilities.  The call is to be placed The contractor is instructed to call 1-800-752-6007 to reach KY 811, the one-call system JOHNSON SCHOOL ROAD PAVEMENT
+
+Surface and Base
+
+8.00" DGA Base
+
+BRIDGE TYPICAL SECTION
+
+PREPARED BY
+
+NTS
+
+COUNTY OF
+
+OHIO
+
+ITEM NO.
+
+2-10014
+
+SHEET NO.
+
+R2
+
+TYPICAL SECTIONS &amp; LEGEND JOHNSON SCHOOL ROAD (CR 1414) OVER BARASS DITCH
+
+agi l l ey
+
+USER:
+
+FI LE NAME:   . . . \d01 47498\Pl an new. dgn
+
+E-SHEET NAME:R00300PL
+
+Mi croStati on v8. 1 1 . 7. 443
+
+1 2: 58: 40 AM
+
+1 /4/201 9
+
+DATE PLOTTED:
+
+I P
+
+POINT
+
+1
+
+2
+
+POB
+
+0+00
+
+0+00.00
+
+3693409.09
+
+45661 35. 09
+
+CP #1
+
+PROJECT COORDINATES
+
+Coordinates for horizontal control were obtained by redundant GPS observations using Trimble R10
+
+GNSS receivers.  On the NAD83 Kentucky State Plane Coordinate System, KY Single Zone, US Survey
+
+Feet utilizing the KYCORS RTN GPS Network on October 31, 2018.  Coordinates shown are State Plane
+
+Coordinates, US Survey Feet.  No project datum factor was calculated or used for this project.
+
+BASIS OF ELEVATIONS
+
+Elevations were established by redundant GPS observations NAVD88 vertical datum, Geoid 12B
+
+utilizing the KYCORS RTN Network and were adjusted by closed differential level loop based on the
+
+elevation of CP#1 (Elev.:387.51')
+
+COORDINATE CONTROL POINTS
+
+State Plane Coordinates
+
+DESCRIPTION
+
+5/8" REBAR &amp; CAP
+
+5/8" REBAR &amp; CAP
+
+STATION
+
+N/A
+
+4+92.18
+
+PC
+
+0+35.1 0
+
+3693443.09
+
+45661 43. 82
+
+J O H N S O N   S C H OO L   R O A D   (
+
+C R   1
+
+Gravel and Grass
+
+Existing R/W
+
+P.I. Sta= 1+11.18
+
+N= 3693516.78
+
+E= 4566162.74
+
+T= 76.08'
+
+L= 152.09'
+
+R= 2000.00'
+
+E= 1.45'
+
+e= NC
+
+NORTH (Y) EAST (X)
+
+ELEV. (Z)
+
+3693364.7874566130.694
+
+3693891.3044566234.046
+
+387.506
+
+384.020
+
+LT. STA. 1+80.94 TO STA. 2+55.73 CONST.
+
+25 L.F. GUARDRAIL-STEEL W BEAM-S FACE A
+
+WITH 1-GUARDRAIL END TREATMENT TYPE 7
+
+CONNECT TO BRIDGE RAIL SYSTEM TYPE II
+
+PT
+
+BEGIN PROJECT
+
+STA. 1+71.82
+
+N 3693576.57
+
+E 4566173.27
+
+E x i
+
+4 1
+
+s t i
+
+ng   R / W
+
+4 )
+
+1 +87. 1 9
+
+3693591 . 69
+
+45661 76. 01
+
+STA. 2+23.00
+
+BEGIN APPROACH DGA
+
+PI
+
+1 +1 1 .1 8
+
+RT. STA. 1+71.82 TO STA. 2+47.32 CONST.
+
+25 L.F. GUARDRAIL-STEEL W BEAM-S FACE A
+
+WITH 1-GUARDRAIL END TREATMENT TYPE 7
+
+CONNECT TO BRIDGE RAIL SYSTEM TYPE II
+
+OFFSET
+
+N/A
+
+8.26' LT.
+
+BARASS DI TCH
+
+2 0 : 1
+
+4'-10"
+
+4'-5"
+
+20:1
+
+TH
+
+B-1
+
+PI
+
+45661 86. 34
+
+3693650.06
+
+2+46.46
+
+HAROLD DANE &amp;
+
+DONNA B. MILLIGAN
+
+8"
+
+18"
+
+8"
+
+I P
+
+REMOVE
+
+DEAD TREE
+
+8"
+
+REMOVE
+
+EXISTING
+
+BRIDGE
+
+0'
+
+11"
+
+10"
+
+8"
+
+12"
+
+20'
+
+TYSON C. SANDERFUR
+
+BARASS DI TCH
+
+I P
+
+5'-6"
+
+5'-6"
+
+STA. 3+45.00
+
+END APPROACH DGA
+
+RT. STA. 2+91.00 TO STA. 3+40.00 REALIGN
+
+49 L.F. DITCH (V-SHAPED) AS PART OF
+
+CONSTRUCTION AND INSTALLATION OF
+
+CYCLOPEAN STONE RIP RAP
+
+RT. STA. 3+12.82 TO STA. 3+87.98 CONST.
+
+25 L.F. GUARDRAIL-STEEL W BEAM-S FACE A
+
+WITH 1-GUARDRAIL END TREATMENT TYPE 7
+
+CONNECT TO BRIDGE RAIL SYSTEM TYPE II
+
+PREPARED BY
+
+40'
+
+80'
+
+LT. STA. 3+21.24 TO STA. 3+96.40 CONST.
+
+25 L.F. GUARDRAIL-STEEL BEAM-S FACE A
+
+WITH 1-GUARDRAIL END TREATMENT TYPE 7
+
+CONNECT TO BRIDGE RAIL SYSTEM TYPE II
+
+END PROJECT
+
+STA. 3+96.40
+
+N 3693796.09
+
+E 4566220.33
+
+Existing R/W
+
+I P
+
+Gravel and Grass
+
+Existing R/W
+
+CP #2
+
+4566240.87
+
+PLAN
+
+JOHNSON SCHOOL ROAD (CR 1414)
+
+OVER BARASS DITCH
+
+PI
+
+4+86.99
+
+3693884.32
+
+5+00
+
+COUNTY OF
+
+ITEM NO.
+
+SHEET NO.
+
+OHIO
+
+2-10014
+
+R3
+
+EXISTING BRIDGE ID: 092C00080N
+
+POE
+
+6+00.00
+
+3693994.22
+
+6+00
+
+4566267.23
+
+USER:  agi l l ey FI LE NAME:   C:\PW\_WORKI NG\D01 47498\PROFI LE. DGN
+
+E-SHEET NAME:R00400PF
+
+Mi croStati on v8. 1 1 . 7. 443
+
+DATE PLOTTED: January 4, 201 9
+
+DATUM
+
+408
+
+406
+
+404
+
+402
+
+400
+
+398
+
+396
+
+394
+
+392
+
+390
+
+388
+
+386
+
+384
+
+382
+
+380
+
+378
+
+376
+
+374
+
+372
+
+370
+
+388.0
+
+0+00
+
+388.0
+
+0+20
+
+388.0
+
+0+40
+
+The existing
+
+in J O H N S O N   S C H O O L   R O A D   (
+
+CR   1
+
+STA. 2+23.00
+
+BEGIN APPROACH DGA
+
+BRIDGE REMOVAL NOTE
+
+58'x16'  -
+
+accordance
+
+shall
+
+9 5 %
+
+El ev 386. 01
+
+PVI   2+23. 00
+
+- 0 .
+
+Existing
+
+Low Beam
+
+Elev 382.94
+
+removed
+
+shall  be
+
+bridge
+
+timber
+
+(2)  span
+
+two
+
+with  the
+
+the bridge existing specifications.  All  material  in  the property disposed shall  be and contractor the of
+
+remain
+
+of in accordance with the current specifications. The existing structure consists
+
+of one (1)  58'  timber bridge, two (2) timber abutments, and three (3)  timber piers.
+
+Lump sum payment in full  shall  include the complete removal  of existing structure
+
+and all appurtenances. Contractor shall final dress all slopes to maximum of 2:1.
+
+387.8
+
+387.1
+
+0+60
+
+387.6
+
+0+80
+
+387.5
+
+1+00
+
+387.3
+
+1+20
+
+1+40
+
+386.8
+
+1+60
+
+386.6
+
+1+80
+
+386.4
+
+2+00
+
+386.1
+
+2+20
+
+BEGIN PROJECT
+
+STA. 1+71.82
+
+4 1
+
+4 )
+
+385.7
+
+385.85
+
+2+40
+
+PVI   2+51 . 52
+
+El ev 385. 74
+
+385.1
+
+385.63
+
+2+60
+
+STA 2+84.27 CONST.
+
+1 - SPAN CB 27X48 PPC
+
+COMPOSI TE DECK BRI DGE
+
+@ 30  SKEW RI GHT
+
+- 1
+
+372.7
+
+385.36
+
+2+80
+
+. 3 3 %
+
+377.3
+
+385.09
+
+3+00
+
+PVI   3+1 7. 03
+
+El ev 384. 87
+
+- 1
+
+. 6 1 %
+
+PROPOSED
+
+LOW BEAM
+
+ELEV 381.85
+
+384.7
+
+384.82
+
+384.50
+
+384.5
+
+3+20
+
+3+40
+
+PVI   3+45. 00
+
+El ev 384. 42
+
+384.2
+
+3+60
+
+STA. 3+45.00
+
+END APPROACH DGA
+
+384.1
+
+383.9
+
+3+80
+
+4+00
+
+383.9
+
+4+20
+
+END PROJECT
+
+STA. 3+96.40
+
+384.0
+
+384.1
+
+4+40
+
+4+60
+
+PREPARED BY
+
+384.1
+
+4+80
+
+384.3
+
+5+00
+
+0'
+
+384.5
+
+5+20
+
+20'
+
+384.8
+
+5+40
+
+COUNTY OF
+
+OHIO
+
+40'
+
+385.2
+
+ITEM NO.
+
+2-10014
+
+385.6
+
+5+60
+
+80'
+
+386.1
+
+5+80
+
+6+00
+
+8'
+
+4'
+
+2'
+
+0'
+
+372
+
+6+20
+
+PROFILE
+
+JOHNSON SCHOOL ROAD (CR 1414)
+
+OVER BARASS DITCH
+
+SHEET NO.
+
+R4
+
+DATUM
+
+406
+
+404
+
+402
+
+400
+
+398
+
+396
+
+394
+
+392
+
+390
+
+388
+
+386
+
+384
+
+382
+
+380
+
+378
+
+376
+
+374
+
+8th edition with interims. the AASHTO specifications are to the AASHTO LRFD Bridge Design Specifications, Construction including any current supplemental specifications. All references to Kentucky Department of Highways Standard Specifications for Road and Bridge Specifications: References to the specifications are to the current edition of the
+
+This bridge is designed for a future wearing surface of 15 psf. Design Load: This bridge is designed for KYHL-93 live load, (i.e. 1.25xAASHTO HL93 live load).
+
+Specifications. than the load and resistance factor design method as specified in the current AASHTO Design Method: All reinforced concrete members are designed to be equivalent or greater
+
+fy = 60000 psi
+
+For Steel Reinforcement
+
+f'c = 4000 psi
+
+For Class "AA" Reinforced Concrete
+
+f'c = 3500 psi
+
+For Class "A" Reinforced Concrete
+
+## Materials Design Specifications:
+
+below shall govern the materials furnished. Material Specifications: AASHTO Specifications or ASTM, current edition, as designated
+
+Grade 60 Deformed and Plain Billet-Steel for Concrete Reinforcement,
+
+AASHTO M-31
+
+Premolded Cork Filler, Type II
+
+AASHTO M153
+
+Specifications. conform to subsection 807.04.02 (Type II) of the Kentucky Department of Highways Standard Preformed Cork Expansion Joint Material: Preformed Cork Expansion Joint Material shall
+
+the plans and specifications. the substructure below the caps. Prestressed beam concrete shall be in accordance with portions of the substructure above the tops of caps. Class "A" concrete is to be used in Concrete: Class "AA" Concrete is to be used throughout the superstructure and in the
+
+Bill of Reinforcement shall be considered a stirrup for purposes of bend diameters. 811.10 of the Standard Specifications. Any reinforcing bars designated by suffix "s" in a bars designated by suffix "e" in the plans shall be epoxy coated in accordance with section unless otherwise shown. Spacing of bars is from center to center of bars. Any reinforcing Reinforcement: Dimensions shown from the face of concrete to bars are to center of bars
+
+the work for which no direct payment will be made. engineer. The contractor shall furnish all plans, equipment and labor necessary to do shall be imprinted in the concrete with 1 inch letters at a location designated by the Construction Identification: The names of the Prime Contractor and the Sub-Contractor
+
+Beveled Edges: All exposed edges shall be beveled  ", "unless otherwise shown".
+
+specifications. Beams shall be at the contract unit price per linear foot of beam, in accordance with the Payment for Precast Concrete Beams: The basis of payment for the Prestressed Concrete
+
+incidental to the unit price bid for Dry Cyclopean Stone Riprap. Specifications 214 and 843.  Payment for Geotextile Fabric, Type I, shall be considered between the embankment and the slope protection in accordance with Standard accordance with the plans and specifications.  Geotextile Fabric, Type I shall be placed Slope Protection: Slope Protection at abutments shall be dry cyclopean stone riprap in
+
+labor, or anything else required to complete the structure. removal of all or parts of existing structures, phase construction, incidental materials, the work involved. This may include cofferdams, shoring, excavations, backfilling, operations not otherwise specified, are to be included in the bid item most appropriate to accordance with the plans and specifications. Material, labor, or construction Completion of the Structure: The contractor is required to complete the structure in
+
+case by case basis. paper copies, Construction Management Team reserves the right to require such copies on a Team" are to be used for fabrication. While this process does not require the submission of distributed, and only plans electronically stamped "Distributed by Construction Management for distribution. Only plans submitted directly to the Construction Management Team will be stamped by the designer and plans will be forwarded to the Construction Management Team designer's comments, files shall be returned to the designer. Each sheet will be electronically submissions as needed and return them to the fabricator. Upon reconciliation of the either 11" x 17" or 22" x 36" sheets. Designers will make review comments on these electronic consultant for review. These submissions shall depict the shop plans, in .pdf format, as Shop Drawings: Fabricators shall submit all required shop plans, by e-mail, to the design
+
+contractor. drawings reflecting these changes shall be submitted to the consultant through the When any changes in the design plans are proposed by the fabricator or supplier, the shop
+
+## General Notes
+
+activities that may involve utilities (overhead or underground). prior to excavation of material or installation of guardrail or other construction Utilities: The contractor shall be responsible for locating any and all existing utilities
+
+shall be replaced at the contractor's expense. material. New material that is unsuitable because of variations in the existing structure Verifying Field Conditions: The contractor shall field verify all dimensions before ordering
+
+dimensions are horizontal dimensions. Dimensions: Dimensions are for a normal temperature of 60 degrees fahrenheit. Layout
+
+end of slab before the concrete is allowed to set. Superstructure Slab: The superstructure slab shall be poured continuously from end to
+
+of the joint. required by the tape manufacturer, shall be applied for a minimum width of 9" on each side the joint surface shall be clean and free of dirt, debris, or deleterious material. Primer, if Type I, II, or III. The joint is to be covered with 12" wide mastic tape. Prior to application, Mastic Tape: Mastic Tape used to seal joints is to meet the requirements of ASTM C-877
+
+Mastic Tape shall be either:
+
+or approved equal. Cadilloc by The UP Rubber Co. Inc. Seal Wrap by Mar Mac Manufacturing Co. Inc., EZ-Wrap Rubber by Press-seal Casket Corporation,
+
+manufacturer's recommendations with the overlap running downhill. Mastic Tape shall be spliced by taping a minimum of 6" and in accordance with the Mastic Tape shall cover the joint continuously unless otherwise shown in the plans.
+
+measurement of payment shall be made. shall be considered incidental to the unit price bid for concrete class 'AA' and no separate The cost of labor, materials, and incidental items for furnishing and installing Mastic Tape
+
+when pouring the concrete deck slab or when taking "top of beam" elevations. Temporary Supports: Temporary Supports or shoring will not be permitted under the beams
+
+end of bridge. Armored Edge: Fabricate armored edge to match cross slope and parabolic crown at each
+
+Standard Specifications for Highway Bridges, Division II, Section 18. Elastomeric Bearing Pads: Elastomeric Bearing Pads shall conform to the AASHTO
+
+for Precast Beams. Method B. The cost of bearing pads is to be included in the unit price per linear feet and shall be subjected to the load testing requirements corresponding to Design Bearings shall be Low Temperature Grade 3 with a shear modulus between 95 psi and 130 psi
+
+of the Specifications. Foundation Preparation: Foundation Preparation shall be in accordance with Section 603
+
+with Section 805 of the Specifications. Structural Granular Backfill: Materials for Structural Granular Backfill shall be in accordance
+
+but shall be included in the Lump Sum Bid for Foundation Preparation. Contrary to the Specifications, Structural Granular Backfill will not be measured for payment
+
+Piling: Piling shall be driven to practical refusal as defined on the pile record sheet.
+
+required. Test piles shall be driven where designated on the plans to determine the length of pile
+
+structure. All test piles shall be accurately located so that they may be used in the finished
+
+notarized. Contrary to the standard drawings for steel piling, mill test reports are not required to be
+
+of the specifications and of the type shown on the pile record sheet. Pile Points: Provide pile points for all piles.  Pile points shall be in accordance with Section 604
+
+if the actual quantity is different than this estimate. contractor to verify this estimate and bid appropriately. No payment adjustments will be made Concrete Coating: Concrete Coating is estimated at 1728 S.F. It is the responsibility of the ITEM NUMBER
+
+2-10014
+
+agi l l ey
+
+USER:
+
+... \pw\_worki ng\d01 4751 5\Layout. dgn
+
+FI LE NAME:
+
+E-SHEET NAME:
+
+Mi croStati on v8. 1 1 . 9. 459
+
+1 1 :54:02 AM
+
+1 /4/201 9
+
+DATE PLOTTED:
+
+380
+
+11 "
+
+Armored Edge
+
+End of Bridge
+
+Mastic Tape
+
+1   "
+
+Loop
+
+Back Face
+
+of Abut.
+
+END OF BEAM DETAIL
+
+Note:  Contractor shall provide 12" wide
+
+mastic tape to water-proof the joint
+
+between beam ends and abutment. Tape
+
+shall be looped as shown at expansion ends
+
+of bridge to prevent damage to tape.
+
+45661 76. 01
+
+PI
+
+1 +87. 1 9
+
+3693591 . 69
+
+3 8 5
+
+9"
+
+Measured Parallel
+
+To Beam
+
+! Bearing
+
+.01 33'
+
+388
+
+386
+
+384
+
+382
+
+380
+
+378
+
+376
+
+374
+
+372
+
+370
+
+368
+
+366
+
+2+00
+
+3 8 0
+
+385
+
+4 )
+
+J O H N S O N   S C H OO L   R O A D   (
+
+4 1
+
+C R   1
+
+! Bridge
+
+Concrete Surface
+
+"
+
+"
+
+{
+
+- 2 . 0 %
+
+.0033'
+
+1'-0"
+
+"
+
+.0300'
+
+"
+
+Profile Grade
+
+.01 33'
+
+1'-0"
+
+1'-0"
+
+1'-0"
+
+1'-0"
+
+6'-0" Vertical Curve
+
+PARABOLIC CROWN
+
+"
+
+.0033'
+
+- 2 . 0 % }
+
+1'-0"
+
+MUD COLLEGE RD.
+
+El ev 386. 01
+
+PVI   2+23. 00
+
+J O H N S O N   S C H OO L   R O A D   (
+
+C R   1
+
+4 1
+
+4 )
+
+3 8 0
+
+3 8 5
+
+9"
+
+-0.95%
+
+Low Bridge Seat
+
+Elev. 382.58
+
+Pile Cutoff
+
+Elev. 381.58
+
+Berm Elev.
+
+381.58
+
+End Bent 1
+
+(Fix)
+
+9"
+
+#5 Bar @ 12"
+
+Max. Spacing Begin Bridge Sta. 2+51.52
+
+TH
+
+45661 86. 34
+
+3693650.06
+
+2+46.46
+
+8"
+
+375
+
+65'-6" Out to Out
+
+64'-0" ! Brg. to ! Brg.
+
+Barass Di tch
+
+375
+
+Limits of Cyclopean
+
+Stone Rip-Rap (Typ.)
+
+PLAN
+
+(Superstructure Not Shown)
+
+16'-0"
+
+7'-3"
+
+#5 Bars @ 12" Max. Spacing
+
+6'-0" Parabolic Crown
+
+5" Slab Class L Bridge
+
+C
+
+"AA" Conc.
+
+2%
+
+P/G
+
+2%
+
+4~CB27 Box Beams @ 4'-0" = 16'-0"
+
+TYPICAL SECTION
+
+Note: All Slab Reinf. to be Epoxy Coated
+
+7'-3"
+
+PVI   2+51 . 52
+
+PI
+
+El ev 385. 74
+
+8"
+
+*2
+
+3'-0" Berm
+
+(Typ.)
+
+18"
+
+*1
+
+8"
+
+380
+
+! Brg. E.B.#1
+
+Sta. 2+52.27
+
+3'-0" Berm
+
+Width (Typ.)
+
+-1.33%
+
+2'-0" Thick Cyclopean
+
+Stone Rip-Rap Over
+
+Geotextile Fabric
+
+Type I
+
+ELEVATION
+
+64'-0" Single Span CB27 PPC Box Beam
+
+Live Load 1.25 x HL-93 (KY HL-93)
+
+14'-6" Bridge Roadway Width - 30  Skew Rt.
+
+3+00
+
+Remove
+
+Dead
+
+Tree
+
+2 "
+
+Clr.
+
+9"
+
+*1
+
+*2
+
+Berm Elev.
+
+380.73
+
+! Brg. E.B.#2
+
+Sta. 3+16.27
+
+8"
+
+12"
+
+30  (Typ.)
+
+380
+
+End Bridge
+
+Sta. 3+17.02
+
+Railing System Type II. See
+
+Std. Dwg. BDP-005 (c.e.)
+
+Rustication
+
+Groove (Typ.)
+
+PVI   3+1 7. 03
+
+El ev 384. 87
+
+1
+
+"
+
+10"
+
+-1.61%
+
+Low Bridge Seat
+
+Elev. 381.73
+
+Pile Cutoff
+
+Elev. 380.73
+
+* Measured   to Abutment
+
+Datum Line
+
+End Bent 2
+
+(Fix)
+
+9"
+
+PVI   3+45. 00
+
+El ev 384. 42
+
+KY 136
+
+ITEM NUMBER
+
+2-10014
+
+DATE:
+
+1/19
+
+DESIGNED BY:
+
+Ground
+
+Line
+
+2: 1
+
+N o r ma l
+
+2'-0"
+
+Toe of Slope
+
+Detail
+
+4+00
+
+CHECKED BY
+
+M. Vickers
+
+REVISION
+
+S. Weber
+
+DETAILED BY:
+
+C. Quinn M. Vickers
+
+Commonwealth of Kentucky
+
+DEPARTMENT OF HIGHWAYS
+
+COUNTY
+
+OHIO
+
+CROSSING
+
+BARASS DITCH
+
+LAYOUT
+
+ROUTE
+
+CR1414
+
+PREPARED BY
+
+2' -0"
+
+2' -0"
+
+DATE
+
+SHEET NO.
+
+S2
+
+DRAWING NO.
+
+27866
+
+| PILE RECORD FOR POINT BEARING PILES   | PILE RECORD FOR POINT BEARING PILES   | PILE RECORD FOR POINT BEARING PILES   | PILE RECORD FOR POINT BEARING PILES   | PILE RECORD FOR POINT BEARING PILES   |
+|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|
+| No. Pile                              | Elevation Cut-off Pile                | In Place Length Pile                  | As Driven Elevation Point of Pile     | Load Axial Design                     |
+| 1                                     | FEET 381.58                           | FEET                                  | FEET                                  | TONS 87                               |
+| 2                                     | 381.58                                |                                       |                                       | 87                                    |
+| 3                                     | 381.58                                |                                       |                                       | 87                                    |
+| 4                                     | 381.58                                |                                       |                                       | 87                                    |
+| 5                                     | 380.73                                |                                       |                                       | 87                                    |
+| 6                                     | 380.73                                |                                       |                                       | 87                                    |
+| 7                                     | 380.73                                |                                       |                                       | 87                                    |
+| 8                                     | 380.73                                |                                       |                                       | 87                                    |
+
+## Definitions of Terms
+
+structure. PILE LENGTH IN PLACE:  Actual pile length below the Pile Cut-Off Elevation in the finished PILE CUT-OFF ELEVATION:  Elevation of the top of pile in the finished structure.
+
+structure. POINT OF PILE ELEVATION AS DRIVEN:  Actual point of pile elevation in the finished
+
+calculations for Factored LRFD Loadings. DESIGN AXIAL LOAD:  Load carried by each pile as estimated from structural design
+
+practical refusal. CALCULATED FIELD BEARING:  Contrary to Section 604.03.07 of the Standard Specifications, in place bearing values are not required for piles bearing on rock when driven to
+
+## Field Data
+
+Length in Place and Point of Pile Elevation as Driven. For each pile, the Project Engineer shall record the following on this sheet: Pile
+
+Submit this record to:
+
+Frankfort, KY 40622 200 Mero Street 3rd Floor East Director, Division of Structural Design Kentucky Transportation Cabinet
+
+required to keep and submit. This pile record does not replace other pile records the Project Engineer is
+
+Use HP 12x53 in accordance with BPS-003, c.e.
+
+## Driving Criteria and Pile Notes
+
+DRIVING CRITERIA:  Drive point bearing piles to practical refusal.
+
+performed in accordance with applicable federal, state, and local guidelines. safety to people working in or around the excavations. Bracing should be Foundation excavations should be properly braced/shored to provide adequate
+
+groundwater will be encountered at foundation locations within the floodplain. required to facilitate foundation construction. it should be anticipated that Temporary shoring, sheeting, cofferdams and/or a dewatering method may be
+
+pile driving procedures. by the Engineer will be subject to satisfactory field performance of the prior to the installation of the first pile. Approval of the pile driving system Contractor shall submit the proposed pile driving system to the Engineer without encountering excessive blow counts or damage to the piles. The 75 foot-kips will be required to drive 12x53 steel H-piles to practical refusal A diesel pile driving hammer with a rated energy between 44 foot-kips and
+
+directed by the Engineer. to further advance the pile.  Drive additional production and test piles if the average driving resistance specified for practical refusal is required to the depth anticipated, the Engineer will determine if more blows than strata or an obstruction, such as a boulder before the pile is advanced damaged during driving. If hard driving is encountered because of dense Immediately cease driving operations if the pile visibly yields or becomes resistances specifed above and to depths determined by test pile(s). penetration of  " or less.  Advance the production piling to the driving is obtained after the pile is struck an additional 10 blows with total penetration becomes  " or less for 10 consecutive blows, practical refusal For this project minimum blow requirements are reached after total
+
+Construction. Kentucky Department of Highway Standard Specifications for Road and Bridge Bridge Design Specifications, and Section 604 of the current edition of the The installation of the pile foundations should conform to current AASHTO LRFD
+
+and Bridge Construction, current edition. accordance with Section 604 of the Kentucky Standard Specifications for Road may be encountered is recommended. Installation of pile points should be in of reinforced pile points capable of penetrating boulders and hard layers which used on end bearing piles to allow for embedment into the top of bedrock. Use The Kentucky Transportation Cabinet recommends that protective pile points be agi l l ey USER:
+
+... \Pi l e End Bents 1 &amp;2. dgn
+
+FI LE NAME:
+
+E-SHEET NAME:
+
+Mi croStati on v8. 1 1 . 9. 459
+
+1 : 1 0:1 9 AM
+
+1 /4/201 9
+
+DATE PLOTTED:
+
+H1
+
+H2
+
+H3
+
+BRIDGE
+
+WIDTH
+
+16
+
+24
+
+32
+
+NOTES:
+
+1) Conform to KYTC, Standard Specifications, Current Edition.
+
+2) Concrete to be Class "A", 3500 psi.
+
+3) Rebar to be epoxy coated A615, Grade 60.
+
+4) Maintain 2" clear cover to reinforcement unless otherwise noted.
+
+5) End Bents are designed for the maximum span of the following
+
+steel and concrete beams as shown in the current standards:
+
+H1 - B12, CB12, B17, CB17, B21 or rolled steel beams up to 16" nominal depth.
+
+H2 - CB21, B27, CB27, B33 or rolled steel beams up to 24" nominal depth.
+
+H3 - CB33, B42, CB42 or rolled steel beams up to 36" nominal depth.
+
+6) Piles may be HP12x53 or 16" Steel Pipes with  " wall thickness.
+
+"L"
+
+30
+
+3' -0"
+
+1 ' -6"
+
+SUPERSTRUCTURE HEIGHT
+
+SDH=Beam Height
+
++pad height
+
++(haunch+slab)
+
+[if applicable]
+
+12"   SDH  27"
+
+27"   SDH  35"
+
+35"   SDH  50"
+
+PILES
+
+NO.
+
+4
+
+4
+
+5
+
+5
+
+5
+
+6
+
+6
+
+6
+
+7
+
+PE
+
+PS
+
+2'-9 "
+
+2'-10 "
+
+2'-9 "
+
+2'-11 "
+
+3'-6 "
+
+2'-5 "
+
+2'-6 "
+
+4'-1 "
+
+3'-0 "
+
+7'-0"
+
+8'-0"
+
+7'-6"
+
+7'-6"
+
+8'-0"
+
+8'-0"
+
+8'-0"
+
+8'-0"
+
+8'-0"
+
+PILE LOAD
+
+SIZE
+
+TONS
+
+H1
+
+H2
+
+H3
+
+H1
+
+H2
+
+H3
+
+H1
+
+H2
+
+H3
+
+73
+
+87
+
+88
+
+80
+
+99
+
+103
+
+88
+
+109
+
+116
+
+6"
+
+*"WALB"
+
+"WV"
+
+*"WAUB"
+
+A4
+
+A5 or A9
+
+A6 or A10
+
+*WAUF
+
+*"WALF"
+
+"PE"
+
+~Wing A~
+
+"J"~A4 @ 12"
+
+= "K"
+
+A
+
+A5 or A7 b.f.
+
+A6 or A8 f.f.
+
+Field Bend
+
+(If necessary)
+
+"A"
+
+A
+
+"E"~A1 @ "F"
+
+2'-0"
+
+="G" (Typ.)
+
+"B"~A1 @ "C" = "D"
+
+PL
+
+21'-0"
+
+24'-0"
+
+30'-0"
+
+30'-0"
+
+32'-0"
+
+40'-0"
+
+40'-0"
+
+40'-0"
+
+48'-0"
+
+"L1"
+
+*8'-5" (16' bridge width)
+
+*13'-0 " (24' bridge width)
+
+*17'-7 " (32' bridge width)
+
+Back Face of
+
+End Bent
+
+! Bridge
+
+*10'-1 " (16' bridge width)
+
+*14'-9 " (24' bridge width)
+
+WX
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+CAP BILL OF REINFORCEMENT
+
+16'-0" BRIDGE WIDTH
+
+24'-0" BRIDGE WIDTH
+
+32'-0" BRIDGE WIDTH
+
+MARK
+
+SIZE
+
+TYPE
+
+LENGTH
+
+NO.
+
+A1e
+
+A2e
+
+A3e
+
+A1e
+
+A2e
+
+A3e
+
+A1e
+
+A2e
+
+14s
+
+Str.
+
+Str.
+
+14s
+
+Str.
+
+Str.
+
+14s
+
+Str.
+
+A3e Str.
+
+Geometry MARK
+
+LENGTH
+
+TYPE
+
+NO.
+
+SIZE
+
+A1e
+
+A2e
+
+A3e
+
+A1e
+
+A2e
+
+A3e
+
+A1e
+
+A2e
+
+A3e
+
+24
+
+9
+
+4
+
+27
+
+9
+
+4
+
+34
+
+9
+
+5
+
+8
+
+5
+
+5
+
+8
+
+5
+
+5
+
+8
+
+4
+
+5
+
+11- 0
+
+26- 3
+
+26- 3
+
+11- 0
+
+29- 5
+
+29- 5
+
+11- 0
+
+35- 3
+
+35- 3
+
+DIMENSIONS
+
+Reinforcement
+
+L
+
+L1
+
+L2
+
+26'-7 " 12'-5 " 14'-2 "
+
+29'-9 " 14'-0 " 15'-9 "
+
+35'-7 " 16'-11 " 18'-8 "
+
+35'-10 "17'-0 " 18'-9 "
+
+39'-0 " 18'-7 " 20'-4 "
+
+44'-10 "21'-6 " 23'-3 "
+
+45'-1 " 21'-8 " 23'-5 "
+
+48'-3 "23'-3 "25'-0 "
+
+54'-1 " 26'-2 "27'-11 "
+
+A
+
+B
+
+3 " 3
+
+2 " 3
+
+3 " 3
+
+3 " 3
+
+3 " 4
+
+3 "
+
+3
+
+2 " 3
+
+4 " 4
+
+2 " 3
+
+C
+
+E
+
+D
+
+F
+
+9"
+
+10"
+
+9"
+
+10"
+
+9"
+
+7"
+
+8"
+
+11"
+
+11"
+
+1'-6"
+
+1'-8"
+
+1'-6"
+
+1'-8"
+
+2'-3"
+
+1'-2"
+
+1'-4"
+
+2'-9"
+
+1'-10"
+
+6
+
+7
+
+7
+
+7
+
+7
+
+7
+
+7
+
+7
+
+7
+
+12"
+
+12"
+
+11"
+
+11"
+
+12"
+
+12"
+
+12"
+
+12"
+
+12"
+
+14s
+
+Str.
+
+Str.
+
+14s
+
+Str.
+
+Str.
+
+14s
+
+Str.
+
+Str.
+
+H
+
+2
+
+3
+
+4
+
+2
+
+3
+
+4
+
+2
+
+3
+
+4
+
+SIZE
+
+NO.
+
+LENGTH
+
+TYPE
+
+MARK
+
+A1e
+
+A2e
+
+A3e
+
+A1e
+
+A2e
+
+A3e
+
+A1e
+
+A2e
+
+A3e
+
+J
+
+4
+
+5
+
+8
+
+4
+
+5
+
+8
+
+4
+
+5
+
+14s
+
+Str.
+
+Str.
+
+14s
+
+Str.
+
+Str.
+
+14s
+
+Str.
+
+Str.
+
+41
+
+9
+
+4
+
+43
+
+9
+
+4
+
+48
+
+9
+
+4
+
+WING A
+
+K
+
+WALF
+
+3'-0"
+
+4'-0"
+
+7'-0"
+
+3'-0"
+
+4'-0"
+
+7'-0"
+
+3'-0"
+
+4'-0"
+
+2'-3 "
+
+3'-10 "
+
+6'-9 "
+
+2'-3 "
+
+3'-10 "
+
+6'-9 "
+
+2'-3 "
+
+3'-10 "
+
+5
+
+8
+
+5
+
+5
+
+8
+
+5
+
+5
+
+8
+
+11- 0
+
+35- 6
+
+35- 6
+
+11- 0
+
+38- 8
+
+38- 8
+
+11- 0
+
+44- 6
+
+5
+
+44- 6
+
+Back Face
+
+WAUB
+
+WV
+
+0
+
+0
+
+3'-9 "
+
+0
+
+0
+
+3'-9 "
+
+0
+
+0
+
+3'-9 "
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+4'-9"
+
+G
+
+5'-0"
+
+6'-0"
+
+5'-6"
+
+5'-6"
+
+6'-0"
+
+6'-0"
+
+6'-0"
+
+6'-0"
+
+6'-0"
+
+34
+
+9
+
+4
+
+36
+
+9
+
+4
+
+41
+
+9
+
+4
+
+WALB
+
+4'-0 "
+
+5'-7 "
+
+8'-6 "
+
+4'-0 "
+
+5'-7 "
+
+8'-6 "
+
+4'-0 "
+
+5'-7 "
+
+8'-6 "
+
+5
+
+8
+
+5
+
+5
+
+8
+
+5
+
+5
+
+8
+
+11- 0
+
+44- 9
+
+44- 9
+
+11- 0
+
+47-11
+
+47-11
+
+11- 0
+
+53- 9
+
+5
+
+53- 9
+
+Front Face
+
+WAUF
+
+0
+
+0
+
+2'-0 "
+
+0
+
+0
+
+2'-0 "
+
+0
+
+0
+
+WX
+
+WV
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+MARK
+
+A4e
+
+A5e
+
+A6e
+
+A4e
+
+A5e
+
+A6e
+
+A4e
+
+A5e
+
+A6e
+
+J
+
+2
+
+4
+
+7
+
+2
+
+4
+
+7
+
+2
+
+4
+
+TYPE
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+NO.
+
+15
+
+2
+
+2
+
+22
+
+3
+
+3
+
+33
+
+4
+
+Str.
+
+4
+
+K
+
+WBLB
+
+1'-0"
+
+3'-0"
+
+6'-0"
+
+1'-0"
+
+3'-0"
+
+6'-0"
+
+1'-0"
+
+3'-0"
+
+2'-1"
+
+7'-0"
+
+8
+
+6'-9 "
+
+2'-0 "
+
+4'-9"
+
+2'-1"
+
+7
+
+6'-0"
+
+7) Piles driven to rock must be driven to Refusal.  Friction Piles must
+
+be driven to (Pile Load/0.4) using the Gates Method.
+
+8) Pile load given is Factored Strength Load.
+
+9) Piles must be driven 10' into existing ground or to refusal on bedrock.
+
+Piles at wet crossings must be driven to 10' below stream bed or to
+
+refusal on bedrock.  A minimum pile length of 10' is required in all
+
+circumstances.
+
+10) Contractor shall provide a hammer capable of driving the piling
+
+to refusal or capacity without encountering excessive blow counts or
+
+damaging the pile.  Contractor shall be responsible for all damaged piling.
+
+"L2"
+
+*10'-1 " (16' bridge width)
+
+*14'-9 " (24' bridge width)
+
+*19'-4 " (32' bridge width)
+
+! Brg. &amp; ! Cap
+
+*8'-5" (16' bridge width)
+
+*13'-0 " (24' bridge width)
+
+*19'-4 " (32' bridge width)
+
+*17'-7 " (32' bridge width)
+
+No. Piles @ "PS" = "PL"
+
+PLAN
+
+(Left skew shown, right skew opposite hand)
+
+NOTE:
+
+Slope cap as necessary with side by side box beams and step cap
+
+seats with rolled steel beams to maintain proper roadway slope.
+
+! Bridge
+
+*Adjust 10 " as necessary for
+
+rolled beam superstructure
+
+A9 or A11
+
+3"   cl .
+
+orA8 @ eq.
+
+" H" ~A5, A6, A7
+
+6"   + SDH
+
+3' -0"   Mi n.
+
+1 ' -6"9"
+
+Mi n.
+
+3"   cl .
+
+5~A2 as shown
+
+! Brg. &amp; ! Cap
+
+A10 or A12
+
+A4
+
+4~A2 Eq. Spa.
+
+2~A3 e.f. @ eq. spa.
+
+A1
+
+4'-0 "
+
+5'-7 "
+
+8'-6 "
+
+4'-0 "
+
+5'-7 "
+
+8'-6 "
+
+4'-0 "
+
+5'-7 "
+
+8'-6 "
+
+A9 or A11 b.f.
+
+A10 or A12 f.f.
+
+" expansion
+
+joint material (Typ.)
+
+B
+
+A2
+
+A3
+
+B
+
+ELEVATION
+
+2' -0"
+
+( Typ. )
+
+*"WBLB"
+
+*"WBUB"
+
+"WV"
+
+A4
+
+A7 or A11
+
+*WBUF
+
+*"WBLF"
+
+"PE"
+
+~Wing B~
+
+A8 or A12
+
+" WX"
+
+3' -0" Vari es
+
+1'-6"
+
+3'-0"
+
+SECTION A-A
+
+6"   + SDH
+
+Mandatory Construction joint for side by side
+
+box beams.  Wings shall be poured after beams
+
+are set and tensioning rods are tightened
+
+(typ. each wing).
+
+NOTE:
+
+Trim A4-A12 bars as necessary.
+
+spa. ( e. f. )
+
+Emb.
+
+1 "
+
+SIZE
+
+5
+
+5
+
+5
+
+5
+
+5
+
+5
+
+5
+
+5
+
+WING BILL OF REINFORCEMENT
+
+LENGTH
+
+TYPE
+
+MARK
+
+MARK
+
+LENGTH
+
+NO.
+
+SIZE
+
+4- 0
+
+3- 6
+
+2- 0
+
+4- 8
+
+5- 1
+
+3- 7
+
+5-11
+
+8- 0
+
+5
+
+6- 6
+
+Back Face
+
+WBUB
+
+0
+
+0
+
+3'-9 "
+
+0
+
+0
+
+3'-9 "
+
+0
+
+0
+
+3'-9 "
+
+WV
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+4'-9"
+
+A7e
+
+A8e
+
+A9e
+
+A7e
+
+A8e
+
+A9e
+
+A7e
+
+A8e
+
+A9e
+
+J
+
+4
+
+6
+
+8
+
+4
+
+6
+
+8
+
+4
+
+6
+
+8
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+WING B
+
+K
+
+WBLF
+
+3'-0"
+
+5'-0"
+
+7'-0"
+
+3'-0"
+
+5'-0"
+
+7'-0"
+
+3'-0"
+
+5'-0"
+
+7'-0"
+
+5'-9 "
+
+7'-4 "
+
+10'-3 "
+
+5'-9 "
+
+7'-4 "
+
+10'-3 "
+
+5'-9 "
+
+7'-4 "
+
+10'-3 "
+
+2
+
+2
+
+1
+
+3
+
+3
+
+1
+
+4
+
+4
+
+1
+
+5
+
+5
+
+6
+
+5
+
+5
+
+6
+
+5
+
+5
+
+3- 9
+
+5- 3
+
+3- 6
+
+5- 4
+
+6-10
+
+5- 1
+
+8- 3
+
+9- 9
+
+6
+
+8- 5
+
+Front Face
+
+WBUF
+
+0
+
+0
+
+5'-6 "
+
+0
+
+0
+
+5'-6 "
+
+0
+
+0
+
+WV
+
+WX
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+4'-9"
+
+0
+
+0
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+5'-6 "
+
+2'-1"
+
+4'-9"
+
+Fill to bottom
+
+of cap elevation
+
+before driving piles.
+
+A10e
+
+A11e
+
+A12e
+
+A10e
+
+A11e
+
+A12e
+
+A10e
+
+A11e
+
+A12e
+
+J
+
+5
+
+7
+
+10
+
+5
+
+7
+
+10
+
+5
+
+7
+
+10
+
+WX
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+2'-1"
+
+0
+
+0
+
+2'-1"
+
+2' -7"
+
+6"
+
+lap
+
+2'-8"
+
+A1 Bar
+
+~Size #5~
+
+3' -0"   Mi n.
+
+3"   cl .
+
+5~A2 as shown
+
+1'-6"
+
+3'-0"
+
+SECTION B-B
+
+ITEM NUMBER
+
+2-10014
+
+TYPE
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+Str.
+
+K
+
+4'-0"
+
+6'-0"
+
+9'-0"
+
+4'-0"
+
+6'-0"
+
+9'-0"
+
+4'-0"
+
+6'-0"
+
+9'-0"
+
+NO.
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+SIZE
+
+6
+
+6
+
+6
+
+6
+
+6
+
+6
+
+6
+
+6
+
+6
+
+LENGTH
+
+2- 0
+
+3- 9
+
+5- 3
+
+3- 7
+
+5- 4
+
+6-10
+
+6-11
+
+8- 9
+
+10- 2
+
+QUANTITIES
+
+CONC. (C.Y.)
+
+STEEL (LBS.)
+
+11.3
+
+14.1
+
+19.5
+
+14.4
+
+17.2
+
+22.6
+
+17.4
+
+20.3
+
+25.6
+
+1132
+
+1345
+
+1777
+
+1508
+
+1709
+
+2119
+
+1850
+
+2051
+
+2460
+
+1 ' -0"
+
+Mi n.
+
+3'-0"
+
+(Berm)
+
+Cyclopean Stone Rip Rap with
+
+Geotextile Fabric Type I
+
+SECTION THRU END BENT
+
+(Showing berm and fill slope)
+
+! Brg. &amp; ! Cap
+
+4~A2 Eq. Spa.
+
+1 "
+
+DATE:
+
+1/19
+
+DESIGNED BY:
+
+REVISION
+
+S. Weber
+
+( Typ. )
+
+2' -0"
+
+CHECKED BY
+
+M. Vickers
+
+DETAILED BY:
+
+C. Quinn M. Vickers
+
+Commonwealth of Kentucky
+
+DEPARTMENT OF HIGHWAYS
+
+COUNTY
+
+OHIO
+
+CROSSING
+
+BARASS CREEK
+
+PILE END BENTS 1&amp;2
+
+PREPARED BY
+
+ROUTE
+
+CR1414
+
+2~A3 e.f. @ eq. spa.
+
+A1
+
+2: 1
+
+DATE
+
+SHEET NO.
+
+S4
+
+DRAWING NO.
+
+27866
+

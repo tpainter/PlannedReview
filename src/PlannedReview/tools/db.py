@@ -143,7 +143,7 @@ def fusionStore(
         logging.info(f"Existing collection({pdf_collection}) not found.")
     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
 
-    reader = DoclingReader(export_type=DoclingReader.ExportType.JSON)
+    reader = DoclingReader(export_type=DoclingReader.ExportType.MARKDOWN)
     if single_pdf:
         documents = reader.load_data(temp_dir_path)
     else:
@@ -158,9 +158,11 @@ def fusionStore(
     node_parser = DoclingNodeParser()
     nodes = node_parser.get_nodes_from_documents(documents)
 
+    ''' This is only needed for JSON????
     for node in nodes:
         for key in node.metadata:
             node.metadata[key] = json.dumps(node.metadata[key])
+    '''
 
     if collection_exists:
         index = VectorStoreIndex.from_vector_store(
