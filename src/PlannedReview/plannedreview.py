@@ -55,9 +55,7 @@ def PlannedReview(pdf: str, prompt: str) -> None:
                 logging.info("Agent Response:")
                 logging.info(result.output)
                 responses_file.write(
-                    f"## Prompt {index}\n\n"
-                    f"{user_prompt}\n\n"
-                    f"### Response\n\n"
+                    f"### Response {index}\n\n"
                     f"{result.output}\n\n"
                     "---\n\n"
                 )
@@ -65,10 +63,10 @@ def PlannedReview(pdf: str, prompt: str) -> None:
 
         saved_responses = responses_path.read_text(encoding="utf-8")
         summary_prompt = (
-            "Summarize the findings in the saved prompt responses below. "
-            "Synthesize recurring issues, highlight important individual findings, "
-            "and note any conflicts or uncertainties. Do not perform a new plan review; "
-            "base the summary only on these responses.\n\n"
+            "Report the findings in the saved prompt responses below. "
+            "Do not summarize the reponse. Report every issue from the responses."
+            "Group the responses by sheet. Do not perform a new plan review; "
+            "Base the summary only on these responses.\n\n"
             f"{saved_responses}"
         )
         summary_result = agent.run_sync(summary_prompt, deps=deps)
