@@ -47,6 +47,7 @@ def setup_llms(llm_config: dict) -> Agent:
                          file_tools.retreive_file,
                          file_tools.write_json,
                          file_tools.markdown_to_pdf,
+                         file_tools.add_red_clouds,
                          ],
                    model_settings={'timeout': 60.0*60*24},
                    tool_timeout=600,

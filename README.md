@@ -10,6 +10,7 @@ This tool is intended to assist knowledgeable staff by checking routine items au
 - Accepts construction plan PDFs as input (multi-page PDFs supported)
 - Detects common issues such as spelling, references, note and specification conflicts, inconsistent references, and common drafting mistakes
 - Produces a summary of findings and a detailed per-page report
+- Can add red cloud annotations for review findings and save a marked-up PDF with `_reviewed` appended to its filename
 - Output can be basic JSON or markdown for adding into automated flows, or it can be a PDF to download and save in the project files.
   
 ## Basic CLI pattern

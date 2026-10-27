@@ -1,9 +1,11 @@
 
 import logging
+import math
 import os
 from pathlib import Path
 import shutil
 
+from pydantic import BaseModel, Field
 from pydantic_ai import BinaryContent, ToolReturn
 from pydantic_ai import RunContext
 
@@ -12,6 +14,12 @@ import pymupdf
 from markdown_pdf import MarkdownPdf, Section
 
 from tools import llm
+
+
+class CloudFinding(BaseModel):
+    page: int = Field(ge=1, description="One-based PDF page number containing the finding.")
+    search_text: str = Field(min_length=1, description="Exact text visible near the finding on that page.")
+    comment: str = Field(min_length=1, description="Review comment to attach to the red cloud.")
 
 
 def pdf_split_pages(file_path: str) -> Path:
@@ -160,3 +168,96 @@ def markdown_to_pdf(ctx: RunContext[llm.AgentDeps], markdown_text: str, pdf_file
         return ToolReturn(
             return_value = f'Error writing {pdf_path}: {e}',
         )
+
+
+def add_red_clouds(
+    ctx: RunContext[llm.AgentDeps], findings: list[CloudFinding]
+) -> ToolReturn:
+    """Mark review findings on the source PDF with red cloud annotations.
+
+    Args:
+        findings: Findings to mark. For each item, provide the one-based PDF
+            page number, a short exact text snippet visible on that page, and
+            the review comment to attach to the cloud.
+    """
+    pdf_path = ctx.deps.pdf_path
+    if pdf_path.suffix.lower() != ".pdf":
+        return ToolReturn(return_value="Cannot add red clouds: the source file is not a PDF.")
+    if not pdf_path.exists():
+        return ToolReturn(return_value=f"Cannot add red clouds: source PDF does not exist: {pdf_path}")
+    if not findings:
+        return ToolReturn(return_value="Cannot add red clouds: no findings were provided.")
+    if any(not finding.search_text.strip() or not finding.comment.strip() for finding in findings):
+        return ToolReturn(
+            return_value="Cannot add red clouds: each finding needs searchable text and a comment."
+        )
+    if pdf_path.stem.lower().endswith("_reviewed"):
+        return ToolReturn(
+            return_value="Cannot add red clouds to a _reviewed PDF; provide the original PDF instead."
+        )
+
+    output_path = pdf_path.with_name(f"{pdf_path.stem}_reviewed.pdf")
+    with pymupdf.open(pdf_path) as doc:
+        page_count = len(doc)
+        invalid_pages = [finding.page for finding in findings if finding.page > page_count]
+        if invalid_pages:
+            return ToolReturn(
+                return_value=(
+                    f"Cannot add red clouds: page number(s) {invalid_pages} exceed "
+                    f"the source PDF's {page_count} pages."
+                )
+            )
+
+        marked = 0
+        unmatched = []
+        for finding in findings:
+            page = doc.load_page(finding.page - 1)
+            matches = page.search_for(finding.search_text)
+            if not matches:
+                unmatched.append(f"page {finding.page}: {finding.search_text!r}")
+                continue
+
+            for match in matches:
+                margin = max(3.0, match.height * 0.25)
+                bounds = match + (-margin, -margin, margin, margin)
+                width = bounds.width / 2
+                height = bounds.height / 2
+                lobe_count = max(8, round(math.pi * (bounds.width + bounds.height) / 10))
+                vertices = []
+                for index in range(lobe_count * 10):
+                    angle = 2 * math.pi * index / (lobe_count * 10)
+                    scallop = 1 + 0.08 * math.cos(lobe_count * angle)
+                    vertices.append(
+                        pymupdf.Point(
+                            bounds.x0 + width + width * scallop * math.cos(angle),
+                            bounds.y0 + height + height * scallop * math.sin(angle),
+                        )
+                    )
+
+                annotation = page.add_polygon_annot(vertices)
+                annotation.set_colors(stroke=(1, 0, 0))
+                annotation.set_border(width=1.5)
+                annotation.set_info(
+                    title="Plan review comment",
+                    subject="Red cloud",
+                    content=finding.comment,
+                )
+                annotation.update()
+                marked += 1
+
+        if marked == 0:
+            return ToolReturn(
+                return_value=(
+                    "No red clouds were added because none of the provided text snippets "
+                    f"matched the PDF. Unmatched findings: {'; '.join(unmatched)}"
+                )
+            )
+
+        doc.save(output_path, garbage=4, deflate=True)
+
+    logging.info("Added %d red cloud annotation(s) to %s", marked, output_path)
+
+    result = f"Added {marked} red cloud annotation(s). Saved reviewed PDF to {output_path}."
+    if unmatched:
+        result += f" Unmatched findings: {'; '.join(unmatched)}"
+    return ToolReturn(return_value=result)

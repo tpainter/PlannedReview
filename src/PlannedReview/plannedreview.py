@@ -66,7 +66,11 @@ def PlannedReview(pdf: str, prompt: str) -> None:
             "Report the findings in the saved prompt responses below. "
             "Do not summarize the reponse. Report every issue from the responses."
             "Group the responses by sheet. Do not perform a new plan review; "
-            "Base the summary only on these responses.\n\n"
+            "Base the summary only on these responses. After identifying the "
+            "findings, call the add_red_clouds tool once with every actionable "
+            "finding that has a page number and exact visible text to locate. "
+            "Include the finding as the cloud comment, and do not invent a "
+            "location when the responses do not provide one.\n\n"
             f"{saved_responses}"
         )
         summary_result = agent.run_sync(summary_prompt, deps=deps)
