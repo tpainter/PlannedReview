@@ -28,6 +28,19 @@ Drop one PDF onto the window or select it with **Choose PDF...**, then select
 **Start review**. When the review finishes, use **Save reviewed PDF as...** to
 save a copy of the `_reviewed.pdf` output wherever you want.
 
+## Local web interface
+
+Install the project dependencies with `uv sync`, then start the local web server
+from the repository root:
+
+    uv run python .\src\PlannedReview\webserver.py
+
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in a browser. Drop one PDF
+onto the upload area or choose a file, then start the review. Progress and
+results appear in the output panel; download the `_reviewed.pdf` when the run
+finishes. The server accepts connections only from the local computer and can
+be stopped with Ctrl+C.
+
 ## Options
 - path/to/construction-plan.pdf  : Path to the input PDF file containing construction plans.
 - --prompt "prompt text"                : Optional. Prompt sent to the llm. Use this for specific or one-off questions.

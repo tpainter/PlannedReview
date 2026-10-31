@@ -34,4 +34,7 @@ dependencies = [
     "torchaudio>=2.11.0",
     "torchvision>=0.26.0",
     "tkinterdnd2>=0.4.3",
+    "fastapi>=0.162.0",
+    "uvicorn>=0.52.0",
+    "python-multipart>=0.0.32",
 ]
