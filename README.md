@@ -17,6 +17,17 @@ This tool is intended to assist knowledgeable staff by checking routine items au
 
     uv run path/to/construction-plan.pdf [--prompt] [--verbose]
 
+## Windows desktop GUI
+
+Install the project dependencies with `uv sync`, then start the GUI from the
+repository root:
+
+    uv run python .\src\PlannedReview\gui.py
+
+Drop one PDF onto the window or select it with **Choose PDF...**, then select
+**Start review**. When the review finishes, use **Save reviewed PDF as...** to
+save a copy of the `_reviewed.pdf` output wherever you want.
+
 ## Options
 - path/to/construction-plan.pdf  : Path to the input PDF file containing construction plans.
 - --prompt "prompt text"                : Optional. Prompt sent to the llm. Use this for specific or one-off questions.

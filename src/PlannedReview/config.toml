@@ -10,9 +10,9 @@ api_key = "fake" # provide key here or in environment variable
 address = "http://192.168.0.50:8080/v1" # only required if local = true
 
 [llm.embed]
-local = true
-provider = "local" # openai, copilot, google
-model = "gemma-embedding"
+local = false
+provider = "google" # openai, copilot, google
+model = "gemini-embedding-2"
 api_key = "fake" # provide key here or in environment variable
 address = "http://192.168.0.50:8080/v1" # openai, copilot, google ; assumed openai compatable if local = true
 
