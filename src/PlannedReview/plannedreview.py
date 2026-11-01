@@ -124,6 +124,11 @@ def PlannedReview(
                 "The review completed, but no new marked-up PDF was created. "
                 "Check that findings include page numbers and searchable text."
             )
+        report("Adding the Markdown review results to the beginning of the PDF...")
+        file_tools.prepend_markdown_to_pdf(
+            str(summary_result.output),
+            reviewed_pdf,
+        )
         report(f"Reviewed PDF created: {reviewed_pdf}")
         report(f"Total tokens used: {total_tokens:,}")
         return reviewed_pdf

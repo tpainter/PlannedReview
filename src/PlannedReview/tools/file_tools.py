@@ -4,6 +4,7 @@ import math
 import os
 from pathlib import Path
 import shutil
+import tempfile
 
 from pydantic import BaseModel, Field
 from pydantic_ai import BinaryContent, ToolReturn
@@ -168,6 +169,28 @@ def markdown_to_pdf(ctx: RunContext[llm.AgentDeps], markdown_text: str, pdf_file
         return ToolReturn(
             return_value = f'Error writing {pdf_path}: {e}',
         )
+
+
+def prepend_markdown_to_pdf(markdown_text: str, pdf_path: Path) -> None:
+    """Render markdown text as PDF pages and prepend them to an existing PDF."""
+    with tempfile.TemporaryDirectory(
+        prefix="plannedreview-report-",
+        dir=pdf_path.parent,
+    ) as temporary_directory:
+        temporary_path = Path(temporary_directory)
+        report_path = temporary_path / "review-report.pdf"
+        merged_path = temporary_path / "merged-review.pdf"
+
+        report_pdf = MarkdownPdf(toc_level=0, optimize=True)
+        report_pdf.add_section(Section(markdown_text))
+        report_pdf.save(report_path)
+
+        with pymupdf.open(report_path) as merged_pdf:
+            with pymupdf.open(pdf_path) as annotated_pdf:
+                merged_pdf.insert_pdf(annotated_pdf, annots=True)
+            merged_pdf.save(merged_path, garbage=4, deflate=True)
+
+        merged_path.replace(pdf_path)
 
 
 def add_red_clouds(
