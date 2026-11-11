@@ -60,54 +60,96 @@ def pdf_move(file_path: Path) -> Path:
             
     return temp_dir 
 
-def retreive_file(ctx: RunContext[llm.AgentDeps], page: int = 1) -> ToolReturn:
+def retreive_file(
+    ctx: RunContext[llm.AgentDeps],
+    page: int = 1,
+    tiled: bool = False,
+) -> ToolReturn:
     """Request page from the pdf document. Only use filename from the database. 
 
     Args:
         page: the page number to retreive from the pdf. default is the first page (1)
+        tiled: return the page as six overlapping images instead of one full-page image to improve readability. default is False
     """
     pdf_path = ctx.deps.pdf_path
-    logging.info(f'Requested PDF: {pdf_path} page {page}')
-    
-    
-    #do some basic checking.
-    # must be a *.pdf
-    if not pdf_path.suffix == '.pdf':
+    logging.info("Requested PDF: %s page %s (tiled=%s)", pdf_path, page, tiled)
+
+    if pdf_path.suffix.lower() != ".pdf":
         return ToolReturn(
-            return_value = f'File is not a PDF. Only PDF files can be requested.',
+            return_value="File is not a PDF. Only PDF files can be requested.",
         )
 
     if not pdf_path.exists():
         return ToolReturn(
-            return_value = f'File does not exist. {pdf_path} ',
+            return_value=f"File does not exist. {pdf_path}",
         )
-
-    # requested page must be in the range of pages in the pdf
-    pdf = PdfReader(pdf_path)
-    if page < 1:
-        ToolReturn(return_value = 'Minimum page number is 1.',)
-    elif page > len(pdf.pages):
-        ToolReturn(
-            return_value = f'''Error page number must be within number of pages in pdf. 
-            {pdf_path} contains {pdf.pages} pages.''',
-            )
 
     try:
-        #TODO: tile pdf instead of returning one big image
-        doc = pymupdf.open(pdf_path)
-        page = doc.load_page(page - 1)  # number of page. Page 1 is 0 index
-        pix = page.get_pixmap(dpi=150)
-
-        binary_file = BinaryContent(data=pix.tobytes(output="png"), media_type='image/png')
-
-        return ToolReturn(
-            return_value = f'Pdf page attached as an image.',
-            content=[binary_file],
-        )
-    except:
-        return ToolReturn(
-                    return_value = f'Error retrieving file.',
+        with pymupdf.open(pdf_path) as doc:
+            if page < 1:
+                return ToolReturn(return_value="Minimum page number is 1.")
+            if page > len(doc):
+                return ToolReturn(
+                    return_value=(
+                        f"Error: page number must be within the PDF's page range. "
+                        f"{pdf_path} contains {len(doc)} pages."
+                    ),
                 )
+
+            pdf_page = doc.load_page(page - 1)
+            if not tiled:
+                pix = pdf_page.get_pixmap(dpi=150)
+                return ToolReturn(
+                    return_value="PDF page attached as one image.",
+                    content=[
+                        BinaryContent(data=pix.tobytes(output="png"), media_type="image/png")
+                    ],
+                )
+
+            page_rect = pdf_page.rect
+            columns = 3
+            rows = 2
+            overlap_x = page_rect.width / columns * 0.1
+            overlap_y = page_rect.height / rows * 0.1
+            tile_images = []
+
+            for row in range(rows):
+                for column in range(columns):
+                    tile_rect = pymupdf.Rect(
+                        max(
+                            page_rect.x0,
+                            page_rect.x0 + column * page_rect.width / columns - overlap_x / 2,
+                        ),
+                        max(
+                            page_rect.y0,
+                            page_rect.y0 + row * page_rect.height / rows - overlap_y / 2,
+                        ),
+                        min(
+                            page_rect.x1,
+                            page_rect.x0 + (column + 1) * page_rect.width / columns + overlap_x / 2,
+                        ),
+                        min(
+                            page_rect.y1,
+                            page_rect.y0 + (row + 1) * page_rect.height / rows + overlap_y / 2,
+                        ),
+                    )
+                    pix = pdf_page.get_pixmap(dpi=150, clip=tile_rect)
+                    tile_images.append(
+                        BinaryContent(data=pix.tobytes(output="png"), media_type="image/png")
+                    )
+
+            return ToolReturn(
+                return_value=(
+                    "PDF page attached as six overlapping image tiles in row-major order "
+                    "(top-left to bottom-right)."
+                ),
+                content=tile_images,
+            )
+    except Exception as error:
+        logging.exception("Error retrieving PDF page %s from %s", page, pdf_path)
+        return ToolReturn(
+            return_value=f"Error retrieving file: {error}",
+        )
         
 def write_json(ctx: RunContext[llm.AgentDeps], file_name: str, content: str) -> ToolReturn:
     """Request file to be writen to the system. 
